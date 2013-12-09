@@ -22,6 +22,12 @@
 		D4870AB61850C96800774072 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A951850C96800774072 /* UIKit.framework */; };
 		D4870ABE1850C96800774072 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4870ABC1850C96800774072 /* InfoPlist.strings */; };
 		D4870AC01850C96800774072 /* ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870ABF1850C96800774072 /* ProjectTests.m */; };
+		D4870ACE1850C99A00774072 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870ACC1850C99A00774072 /* Teacher.m */; };
+		D4B58B841850D3B800790A81 /* MyXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B58B831850D3B800790A81 /* MyXMLParserDelegate.m */; };
+		D4B58BC71850E16000790A81 /* enseignants.xml in Resources */ = {isa = PBXBuildFile; fileRef = D4B58BC61850E16000790A81 /* enseignants.xml */; };
+		D4D7D44F1850CA8800AAD18A /* cours.xml in Resources */ = {isa = PBXBuildFile; fileRef = D4D7D44E1850CA8800AAD18A /* cours.xml */; };
+		D4D7D4521850CBDF00AAD18A /* TUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D7D4511850CBDF00AAD18A /* TUnit.m */; };
+		D4D7D4551850CC4A00AAD18A /* Diploma.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D7D4541850CC4A00AAD18A /* Diploma.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,16 @@
 		D4870ABB1850C96800774072 /* ProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProjectTests-Info.plist"; sourceTree = "<group>"; };
 		D4870ABD1850C96800774072 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4870ABF1850C96800774072 /* ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectTests.m; sourceTree = "<group>"; };
+		D4870ACB1850C99A00774072 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		D4870ACC1850C99A00774072 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		D4B58B821850D3B800790A81 /* MyXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyXMLParserDelegate.h; sourceTree = "<group>"; };
+		D4B58B831850D3B800790A81 /* MyXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyXMLParserDelegate.m; sourceTree = "<group>"; };
+		D4B58BC61850E16000790A81 /* enseignants.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = enseignants.xml; sourceTree = "<group>"; };
+		D4D7D44E1850CA8800AAD18A /* cours.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cours.xml; sourceTree = "<group>"; };
+		D4D7D4501850CBDF00AAD18A /* TUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnit.h; sourceTree = "<group>"; };
+		D4D7D4511850CBDF00AAD18A /* TUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnit.m; sourceTree = "<group>"; };
+		D4D7D4531850CC4A00AAD18A /* Diploma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diploma.h; sourceTree = "<group>"; };
+		D4D7D4541850CC4A00AAD18A /* Diploma.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diploma.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +133,19 @@
 			children = (
 				D4870AA01850C96800774072 /* AppDelegate.h */,
 				D4870AA11850C96800774072 /* AppDelegate.m */,
+				D4B58BC61850E16000790A81 /* enseignants.xml */,
+				D4B58B821850D3B800790A81 /* MyXMLParserDelegate.h */,
+				D4B58B831850D3B800790A81 /* MyXMLParserDelegate.m */,
 				D4870AA31850C96800774072 /* Main.storyboard */,
 				D4870AA61850C96800774072 /* MasterViewController.h */,
 				D4870AA71850C96800774072 /* MasterViewController.m */,
+				D4D7D44E1850CA8800AAD18A /* cours.xml */,
+				D4D7D4531850CC4A00AAD18A /* Diploma.h */,
+				D4D7D4541850CC4A00AAD18A /* Diploma.m */,
+				D4870ACB1850C99A00774072 /* Teacher.h */,
+				D4870ACC1850C99A00774072 /* Teacher.m */,
+				D4D7D4501850CBDF00AAD18A /* TUnit.h */,
+				D4D7D4511850CBDF00AAD18A /* TUnit.m */,
 				D4870AA91850C96800774072 /* DetailViewController.h */,
 				D4870AAA1850C96800774072 /* DetailViewController.m */,
 				D4870AAC1850C96800774072 /* Images.xcassets */,
@@ -233,7 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D7D44F1850CA8800AAD18A /* cours.xml in Resources */,
 				D4870AAD1850C96800774072 /* Images.xcassets in Resources */,
+				D4B58BC71850E16000790A81 /* enseignants.xml in Resources */,
 				D4870A9C1850C96800774072 /* InfoPlist.strings in Resources */,
 				D4870AA51850C96800774072 /* Main.storyboard in Resources */,
 			);
@@ -254,10 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4870ACE1850C99A00774072 /* Teacher.m in Sources */,
 				D4870AA21850C96800774072 /* AppDelegate.m in Sources */,
+				D4D7D4551850CC4A00AAD18A /* Diploma.m in Sources */,
+				D4B58B841850D3B800790A81 /* MyXMLParserDelegate.m in Sources */,
 				D4870AA81850C96800774072 /* MasterViewController.m in Sources */,
 				D4870A9E1850C96800774072 /* main.m in Sources */,
 				D4870AAB1850C96800774072 /* DetailViewController.m in Sources */,
+				D4D7D4521850CBDF00AAD18A /* TUnit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,10 +416,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project/Project-Prefix.pch";
 				INFOPLIST_FILE = "Project/Project-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -397,10 +432,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project/Project-Prefix.pch";
 				INFOPLIST_FILE = "Project/Project-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -466,6 +504,7 @@
 				D4870AC51850C96800774072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4870AC61850C96800774072 /* Build configuration list for PBXNativeTarget "ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +513,7 @@
 				D4870AC81850C96800774072 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,12 +7,35 @@
 //
 
 #import "AppDelegate.h"
+#import "MyXMLParserDelegate.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    BOOL success;
+
+    NSString *pathToFile =@"file:///Users/ufr_info/workspaces/dev-mox/Project/Project/enseignants.xml";
+    NSURL *xmlURL = [NSURL URLWithString:pathToFile];
+                      
+    NSXMLParser *addressParser;
+    MyXMLParserDelegate *dparser = [[MyXMLParserDelegate alloc] init];
+    
+    addressParser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
+    [addressParser setDelegate:dparser];
+    [addressParser setShouldResolveExternalEntities:YES];
+    
+    success = [addressParser parse]; // return value not used
+    // if not successful, delegate is informed of error
+    if (success) {
+        for (NSString* key in dparser.contents) {
+            Teacher *value = [dparser.contents objectForKey:key];
+            // do stuff
+            NSLog(@"%@",value.firstname);
+        }
+    }
+    else { NSLog(@"parse fail"); }
+    
     return YES;
 }
 							
