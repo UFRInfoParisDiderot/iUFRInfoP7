@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D42B61DC185A1DA80054F3F2 /* TeacherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */; };
+		D42B61DF185A28570054F3F2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42B61DE185A28570054F3F2 /* DetailViewController.m */; };
 		D4870A921850C96800774072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A911850C96800774072 /* Foundation.framework */; };
 		D4870A941850C96800774072 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A931850C96800774072 /* CoreGraphics.framework */; };
 		D4870A961850C96800774072 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A951850C96800774072 /* UIKit.framework */; };
@@ -14,8 +16,6 @@
 		D4870A9E1850C96800774072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870A9D1850C96800774072 /* main.m */; };
 		D4870AA21850C96800774072 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870AA11850C96800774072 /* AppDelegate.m */; };
 		D4870AA51850C96800774072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4870AA31850C96800774072 /* Main.storyboard */; };
-		D4870AA81850C96800774072 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870AA71850C96800774072 /* MasterViewController.m */; };
-		D4870AAB1850C96800774072 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870AAA1850C96800774072 /* DetailViewController.m */; };
 		D4870AAD1850C96800774072 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4870AAC1850C96800774072 /* Images.xcassets */; };
 		D4870AB41850C96800774072 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870AB31850C96800774072 /* XCTest.framework */; };
 		D4870AB51850C96800774072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A911850C96800774072 /* Foundation.framework */; };
@@ -41,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D42B61DA185A1DA80054F3F2 /* TeacherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherViewController.h; sourceTree = "<group>"; };
+		D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherViewController.m; sourceTree = "<group>"; };
+		D42B61DD185A28570054F3F2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D42B61DE185A28570054F3F2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D4870A8E1850C96800774072 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4870A911850C96800774072 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4870A931850C96800774072 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,10 +56,6 @@
 		D4870AA01850C96800774072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4870AA11850C96800774072 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D4870AA41850C96800774072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D4870AA61850C96800774072 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		D4870AA71850C96800774072 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		D4870AA91850C96800774072 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		D4870AAA1850C96800774072 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D4870AAC1850C96800774072 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D4870AB21850C96800774072 /* ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4870AB31850C96800774072 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -137,8 +137,10 @@
 				D4B58B821850D3B800790A81 /* MyXMLParserDelegate.h */,
 				D4B58B831850D3B800790A81 /* MyXMLParserDelegate.m */,
 				D4870AA31850C96800774072 /* Main.storyboard */,
-				D4870AA61850C96800774072 /* MasterViewController.h */,
-				D4870AA71850C96800774072 /* MasterViewController.m */,
+				D42B61DA185A1DA80054F3F2 /* TeacherViewController.h */,
+				D42B61DD185A28570054F3F2 /* DetailViewController.h */,
+				D42B61DE185A28570054F3F2 /* DetailViewController.m */,
+				D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */,
 				D4D7D44E1850CA8800AAD18A /* cours.xml */,
 				D4D7D4531850CC4A00AAD18A /* Diploma.h */,
 				D4D7D4541850CC4A00AAD18A /* Diploma.m */,
@@ -146,8 +148,6 @@
 				D4870ACC1850C99A00774072 /* Teacher.m */,
 				D4D7D4501850CBDF00AAD18A /* TUnit.h */,
 				D4D7D4511850CBDF00AAD18A /* TUnit.m */,
-				D4870AA91850C96800774072 /* DetailViewController.h */,
-				D4870AAA1850C96800774072 /* DetailViewController.m */,
 				D4870AAC1850C96800774072 /* Images.xcassets */,
 				D4870A981850C96800774072 /* Supporting Files */,
 			);
@@ -285,11 +285,11 @@
 				D4870ACE1850C99A00774072 /* Teacher.m in Sources */,
 				D4870AA21850C96800774072 /* AppDelegate.m in Sources */,
 				D4D7D4551850CC4A00AAD18A /* Diploma.m in Sources */,
+				D42B61DF185A28570054F3F2 /* DetailViewController.m in Sources */,
 				D4B58B841850D3B800790A81 /* MyXMLParserDelegate.m in Sources */,
-				D4870AA81850C96800774072 /* MasterViewController.m in Sources */,
 				D4870A9E1850C96800774072 /* main.m in Sources */,
-				D4870AAB1850C96800774072 /* DetailViewController.m in Sources */,
 				D4D7D4521850CBDF00AAD18A /* TUnit.m in Sources */,
+				D42B61DC185A1DA80054F3F2 /* TeacherViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

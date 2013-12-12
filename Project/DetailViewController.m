@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "AppDelegate.h"
 
 @interface DetailViewController ()
 - (void)configureView;
@@ -18,9 +19,10 @@
 
 - (void)setDetailItem:(id)newDetailItem
 {
+    NSLog(@"setDetailItem");
+
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
-        
         // Update the view.
         [self configureView];
     }
@@ -29,7 +31,9 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
+    NSLog(@"configureView");
+    AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    // d.dparser.contents
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
@@ -37,6 +41,7 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"viewDidLoad");
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];

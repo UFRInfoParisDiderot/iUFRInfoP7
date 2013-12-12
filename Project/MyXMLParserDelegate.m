@@ -24,7 +24,7 @@
     
     if ([elementName isEqualToString:@"enseignants"]) {
         //creating the dictionary
-        contents = [[NSMutableDictionary alloc] init];
+        contents = [[NSMutableArray alloc] init];
     }
     
     if ([elementName isEqualToString:@"enseignant"]) {
@@ -32,8 +32,10 @@
         
         // adding the current teacher in the dictionary, with his id for key
         NSString *teacherId = [attributeDict objectForKey:@"id"];
-        if (teacherId)
-            [contents setObject:currentTeacher forKey:teacherId];
+        if (teacherId) {
+            currentTeacher.idteacher = teacherId;
+            [contents addObject:currentTeacher];
+        }
     }
 
 }
@@ -42,7 +44,7 @@
 - (void) parser:(NSXMLParser *)parser foundCharacters:
 (NSString *)string
 {
-    NSLog(@"string = %@",string);
+    // NSLog(@"string = %@",string);
     if (!currentStringValue) {
         currentStringValue = [[NSMutableString alloc] init];
     }
@@ -57,20 +59,22 @@
     if ([elementName isEqualToString:@"enseignants"] || [elementName isEqualToString:@"enseignant"])
         return;
     
+    NSString *value = [currentStringValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
     if ([elementName isEqualToString:@"nom"])
-        currentTeacher.lastname = currentStringValue;
+        currentTeacher.lastname = value;
     
     if ([elementName isEqualToString:@"prenom"])
-        currentTeacher.firstname = currentStringValue;
+        currentTeacher.firstname = value;
     
     if ([elementName isEqualToString:@"web"])
-        currentTeacher.webpage = [NSURL URLWithString:currentStringValue];
+        currentTeacher.webpage = [NSURL URLWithString:value];
     
     if ([elementName isEqualToString:@"mail"])
-        currentTeacher.mail = [NSURL URLWithString:currentStringValue];
+        currentTeacher.mail = [NSURL URLWithString:value];
     
     if ([elementName isEqualToString:@"photo"])
-        currentTeacher.image = [NSURL URLWithString:currentStringValue];
+        currentTeacher.image = [NSURL URLWithString:value];
     
     currentStringValue = nil;
 }

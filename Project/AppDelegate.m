@@ -19,17 +19,17 @@
     NSURL *xmlURL = [NSURL URLWithString:pathToFile];
                       
     NSXMLParser *addressParser;
-    MyXMLParserDelegate *dparser = [[MyXMLParserDelegate alloc] init];
+    self.dparser = [[MyXMLParserDelegate alloc] init];
     
     addressParser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
-    [addressParser setDelegate:dparser];
+    [addressParser setDelegate:self.dparser];
     [addressParser setShouldResolveExternalEntities:YES];
     
     success = [addressParser parse]; // return value not used
     // if not successful, delegate is informed of error
     if (success) {
-        for (NSString* key in dparser.contents) {
-            Teacher *value = [dparser.contents objectForKey:key];
+        for (int i=0; i<[self.dparser.contents count]; i++) {
+            Teacher *value = [self.dparser.contents objectAtIndex:i];
             // do stuff
             NSLog(@"%@",value.firstname);
         }

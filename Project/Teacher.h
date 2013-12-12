@@ -15,6 +15,7 @@
 @property NSURL *image;
 @property NSURL *webpage;
 @property NSString *mail;
+@property NSString *idteacher;
 
 - (id) init;
 
