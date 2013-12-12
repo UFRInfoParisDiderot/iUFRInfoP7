@@ -71,6 +71,8 @@
     
     if ([elementName isEqualToString:@"photo"])
         currentTeacher.image = [NSURL URLWithString:currentStringValue];
+    
+    currentStringValue = nil;
 }
 
 @end
