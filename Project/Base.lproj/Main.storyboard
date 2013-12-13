@@ -49,6 +49,9 @@
                                 <state key="normal" title="Cours">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BtH-1k-DRX" kind="push" id="dP3-Rr-oKj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHR-1y-ILY">
                                 <rect key="frame" x="20" y="309" width="65" height="30"/>
@@ -65,6 +68,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atb-yV-aMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="664" y="-47"/>
+        </scene>
+        <!--Unit View Controller - Cours-->
+        <scene sceneID="LO2-j0-hxq">
+            <objects>
+                <tableViewController title="Cours" id="BtH-1k-DRX" customClass="TUnitViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="OgN-tD-f0z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="b4f-MB-Qjp">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b4f-MB-Qjp" id="Txc-JO-ZRg">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BtH-1k-DRX" id="KBm-Bb-r3Q"/>
+                            <outlet property="delegate" destination="BtH-1k-DRX" id="l4d-Ts-iEy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ROc-wo-hhf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMx-rH-Iyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="670"/>
         </scene>
         <!--Teacher View Controller - Enseignants-->
         <scene sceneID="QQi-Rf-dav">

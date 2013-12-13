@@ -1,19 +1,19 @@
 //
-//  TeacherViewController.m
+//  TUnitViewController.m
 //  Project
 //
-//  Created by Elias Abou Haydar on 12/12/13.
+//  Created by Elias Abou Haydar on 13/12/13.
 //  Copyright (c) 2013 Elias Abou Haydar. All rights reserved.
 //
 
-#import "TeacherViewController.h"
+#import "TUnitViewController.h"
 #import "AppDelegate.h"
 
-@interface TeacherViewController ()
+@interface TUnitViewController ()
 
 @end
 
-@implementation TeacherViewController
+@implementation TUnitViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -45,7 +45,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return 1;
 }
 
@@ -59,13 +58,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"%d",indexPath.row);
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    Teacher *t = (Teacher *)[d.teacherparserdelegate.teachers objectAtIndex:indexPath.row];
-    cell.textLabel.text = [t lastname]; // [object description];
+
+#warning look here!
+    // AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    // TUnit *t = (TUnit *)[d.tunitparserdelegate.tUnits objectAtIndex:indexPath.row];
+    // cell.textLabel.text = [t name]; // [object description];
     return cell;
 }
 
@@ -75,6 +75,28 @@
 {
     return NO;
 }
+
+
+/*
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }   
+    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    }   
+}
+*/
+
+/*
+// Override to support rearranging the table view.
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+{
+}
+*/
 
 
 // Override to support conditional rearranging of the table view.

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		790F3C2B185B6FAF008EED0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790F3C1C185B6FAF008EED0C /* Main.storyboard */; };
 		790F3C2C185B6FAF008EED0C /* diplomes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 790F3C1E185B6FAF008EED0C /* diplomes.xml */; };
 		790F3C2D185B6FAF008EED0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 790F3C20185B6FAF008EED0C /* InfoPlist.strings */; };
 		790F3C2E185B6FAF008EED0C /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 790F3C24185B6FAF008EED0C /* Contents.json */; };
@@ -30,6 +29,7 @@
 		D4870ABE1850C96800774072 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4870ABC1850C96800774072 /* InfoPlist.strings */; };
 		D4870AC01850C96800774072 /* ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870ABF1850C96800774072 /* ProjectTests.m */; };
 		D4870ACE1850C99A00774072 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870ACC1850C99A00774072 /* Teacher.m */; };
+		D49BEC59185B7F9400BB5DC3 /* TUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49BEC58185B7F9400BB5DC3 /* TUnitViewController.m */; };
 		D4B58B841850D3B800790A81 /* TeacherParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B58B831850D3B800790A81 /* TeacherParserDelegate.m */; };
 		D4B58BC71850E16000790A81 /* enseignants.xml in Resources */ = {isa = PBXBuildFile; fileRef = D4B58BC61850E16000790A81 /* enseignants.xml */; };
 		D4D7D44F1850CA8800AAD18A /* cours.xml in Resources */ = {isa = PBXBuildFile; fileRef = D4D7D44E1850CA8800AAD18A /* cours.xml */; };
@@ -48,8 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		790F3C1D185B6FAF008EED0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
-		790F3C1E185B6FAF008EED0C /* diplomes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = diplomes.xml; path = Project/diplomes.xml; sourceTree = "<group>"; };
+		790F3C1E185B6FAF008EED0C /* diplomes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = diplomes.xml; sourceTree = "<group>"; };
 		790F3C21185B6FAF008EED0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		790F3C24185B6FAF008EED0C /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		790F3C26185B6FAF008EED0C /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
@@ -80,6 +79,8 @@
 		D4870ABF1850C96800774072 /* ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectTests.m; sourceTree = "<group>"; };
 		D4870ACB1850C99A00774072 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		D4870ACC1850C99A00774072 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		D49BEC57185B7F9400BB5DC3 /* TUnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnitViewController.h; sourceTree = "<group>"; };
+		D49BEC58185B7F9400BB5DC3 /* TUnitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnitViewController.m; sourceTree = "<group>"; };
 		D4B58B821850D3B800790A81 /* TeacherParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherParserDelegate.h; sourceTree = "<group>"; };
 		D4B58B831850D3B800790A81 /* TeacherParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherParserDelegate.m; sourceTree = "<group>"; };
 		D4B58BC61850E16000790A81 /* enseignants.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = enseignants.xml; sourceTree = "<group>"; };
@@ -117,7 +118,6 @@
 		790F3C1B185B6FAF008EED0C /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				790F3C1C185B6FAF008EED0C /* Main.storyboard */,
 			);
 			name = Base.lproj;
 			path = Project/Base.lproj;
@@ -162,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				790F3C1B185B6FAF008EED0C /* Base.lproj */,
-				790F3C1E185B6FAF008EED0C /* diplomes.xml */,
 				790F3C1F185B6FAF008EED0C /* en.lproj */,
 				D4870A901850C96800774072 /* Frameworks */,
 				790F3C22185B6FAF008EED0C /* Images.xcassets */,
@@ -195,29 +194,13 @@
 		D4870A971850C96800774072 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				D4870AA01850C96800774072 /* AppDelegate.h */,
-				D4870AA11850C96800774072 /* AppDelegate.m */,
-				D4D7D44E1850CA8800AAD18A /* cours.xml */,
-				D42B61DD185A28570054F3F2 /* DetailViewController.h */,
-				D42B61DE185A28570054F3F2 /* DetailViewController.m */,
-				D4D7D4531850CC4A00AAD18A /* Diploma.h */,
-				D4D7D4541850CC4A00AAD18A /* Diploma.m */,
-				D4B58BC61850E16000790A81 /* enseignants.xml */,
+				D49BEC5C185B808600BB5DC3 /* Data Model */,
+				D49BEC5D185B80AC00BB5DC3 /* Delegates */,
 				D4870AAC1850C96800774072 /* Images.xcassets */,
 				D4870AA31850C96800774072 /* Main.storyboard */,
-				D4B58B821850D3B800790A81 /* TeacherParserDelegate.h */,
-				D4B58B831850D3B800790A81 /* TeacherParserDelegate.m */,
+				D49BEC5B185B803300BB5DC3 /* Resources */,
 				D4870A981850C96800774072 /* Supporting Files */,
-				D4870ACB1850C99A00774072 /* Teacher.h */,
-				D4870ACC1850C99A00774072 /* Teacher.m */,
-				D42B61DA185A1DA80054F3F2 /* TeacherViewController.h */,
-				D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */,
-				790F3C27185B6FAF008EED0C /* TSchedule.h */,
-				790F3C28185B6FAF008EED0C /* TSchedule.m */,
-				D4D7D4501850CBDF00AAD18A /* TUnit.h */,
-				D4D7D4511850CBDF00AAD18A /* TUnit.m */,
-				790F3C29185B6FAF008EED0C /* TUnitParserDelegate.h */,
-				790F3C2A185B6FAF008EED0C /* TUnitParserDelegate.m */,
+				D49BEC5A185B800000BB5DC3 /* ViewControllers */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -249,6 +232,57 @@
 				D4870ABC1850C96800774072 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D49BEC5A185B800000BB5DC3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D42B61DD185A28570054F3F2 /* DetailViewController.h */,
+				D42B61DE185A28570054F3F2 /* DetailViewController.m */,
+				D42B61DA185A1DA80054F3F2 /* TeacherViewController.h */,
+				D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */,
+				D49BEC57185B7F9400BB5DC3 /* TUnitViewController.h */,
+				D49BEC58185B7F9400BB5DC3 /* TUnitViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D49BEC5B185B803300BB5DC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4D7D44E1850CA8800AAD18A /* cours.xml */,
+				790F3C1E185B6FAF008EED0C /* diplomes.xml */,
+				D4B58BC61850E16000790A81 /* enseignants.xml */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D49BEC5C185B808600BB5DC3 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4D7D4531850CC4A00AAD18A /* Diploma.h */,
+				D4D7D4541850CC4A00AAD18A /* Diploma.m */,
+				D4870ACB1850C99A00774072 /* Teacher.h */,
+				D4870ACC1850C99A00774072 /* Teacher.m */,
+				790F3C27185B6FAF008EED0C /* TSchedule.h */,
+				790F3C28185B6FAF008EED0C /* TSchedule.m */,
+				D4D7D4501850CBDF00AAD18A /* TUnit.h */,
+				D4D7D4511850CBDF00AAD18A /* TUnit.m */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		D49BEC5D185B80AC00BB5DC3 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D4870AA01850C96800774072 /* AppDelegate.h */,
+				D4B58B821850D3B800790A81 /* TeacherParserDelegate.h */,
+				790F3C29185B6FAF008EED0C /* TUnitParserDelegate.h */,
+				D4870AA11850C96800774072 /* AppDelegate.m */,
+				D4B58B831850D3B800790A81 /* TeacherParserDelegate.m */,
+				790F3C2A185B6FAF008EED0C /* TUnitParserDelegate.m */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,7 +366,6 @@
 				D4B58BC71850E16000790A81 /* enseignants.xml in Resources */,
 				D4870A9C1850C96800774072 /* InfoPlist.strings in Resources */,
 				D4870AA51850C96800774072 /* Main.storyboard in Resources */,
-				790F3C2B185B6FAF008EED0C /* Main.storyboard in Resources */,
 				790F3C2C185B6FAF008EED0C /* diplomes.xml in Resources */,
 				790F3C2D185B6FAF008EED0C /* InfoPlist.strings in Resources */,
 				790F3C2E185B6FAF008EED0C /* Contents.json in Resources */,
@@ -361,6 +394,7 @@
 				D42B61DF185A28570054F3F2 /* DetailViewController.m in Sources */,
 				D4B58B841850D3B800790A81 /* TeacherParserDelegate.m in Sources */,
 				D4870A9E1850C96800774072 /* main.m in Sources */,
+				D49BEC59185B7F9400BB5DC3 /* TUnitViewController.m in Sources */,
 				D4D7D4521850CBDF00AAD18A /* TUnit.m in Sources */,
 				D42B61DC185A1DA80054F3F2 /* TeacherViewController.m in Sources */,
 				790F3C30185B6FAF008EED0C /* TSchedule.m in Sources */,
@@ -387,14 +421,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		790F3C1C185B6FAF008EED0C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				790F3C1D185B6FAF008EED0C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		790F3C20185B6FAF008EED0C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
