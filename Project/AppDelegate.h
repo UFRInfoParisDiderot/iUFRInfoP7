@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MyXMLParserDelegate.h"
+#import "TeacherParserDelegate.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong,retain) MyXMLParserDelegate *dparser;
+@property (strong,retain) TeacherParserDelegate *dparser;
 
 @end

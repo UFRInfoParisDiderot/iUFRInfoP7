@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Elias Abou Haydar. All rights reserved.
 //
 
-#import "MyXMLParserDelegate.h"
+#import "TeacherParserDelegate.h"
 #import "Teacher.h"
 #import "TUnit.h"
 
-@implementation MyXMLParserDelegate
+@implementation TeacherParserDelegate
 @synthesize teachers;
 @synthesize currentTeacher;
 @synthesize currentStringValue;

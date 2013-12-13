@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Teacher.h"
 
-@interface MyXMLParserDelegate : NSObject <NSXMLParserDelegate>
+@interface TeacherParserDelegate : NSObject <NSXMLParserDelegate>
 
 @property NSMutableArray *teachers;
 @property Teacher *currentTeacher;

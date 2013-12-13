@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MyXMLParserDelegate.h"
+#import "TeacherParserDelegate.h"
 
 @implementation AppDelegate
 
@@ -15,17 +15,21 @@
 {
     BOOL success;
 
-    NSString *pathToFile =@"file:///Users/ufr_info/workspaces/dev-mox/Project/Project/enseignants.xml";
-    NSURL *xmlURL = [NSURL URLWithString:pathToFile];
-                      
-    NSXMLParser *addressParser;
-    self.dparser = [[MyXMLParserDelegate alloc] init];
+    NSString *pathToFileTeacher =@"file:///Users/ufr_info/workspaces/dev-mox/Project/Project/enseignants.xml";
+    NSString *pathToFileTUnit =@"file:///Users/ufr_info/workspaces/dev-mox/Project/Project/cours.xml";
     
-    addressParser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
-    [addressParser setDelegate:self.dparser];
-    [addressParser setShouldResolveExternalEntities:YES];
+    NSURL *xmlURLTeacher = [NSURL URLWithString:pathToFileTeacher];
+    NSXMLParser *addressParserTeacher;
+    self.dparser = [[TeacherParserDelegate alloc] init];
     
-    success = [addressParser parse]; // return value not used
+    NSURL *xmlURLTUnit = [NSURL URLWithString:pathToFileTUnit];
+    NSXMLParser *addressParserTUnit;
+    
+    addressParserTeacher = [[NSXMLParser alloc] initWithContentsOfURL:xmlURLTeacher];
+    [addressParserTeacher setDelegate:self.dparser];
+    [addressParserTeacher setShouldResolveExternalEntities:YES];
+    
+    success = [addressParserTeacher parse]; // return value not used
     // if not successful, delegate is informed of error
     if (success) {
         for (int i=0; i<[self.dparser.teachers count]; i++) {

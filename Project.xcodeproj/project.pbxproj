@@ -30,7 +30,7 @@
 		D4870ABE1850C96800774072 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4870ABC1850C96800774072 /* InfoPlist.strings */; };
 		D4870AC01850C96800774072 /* ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870ABF1850C96800774072 /* ProjectTests.m */; };
 		D4870ACE1850C99A00774072 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870ACC1850C99A00774072 /* Teacher.m */; };
-		D4B58B841850D3B800790A81 /* MyXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B58B831850D3B800790A81 /* MyXMLParserDelegate.m */; };
+		D4B58B841850D3B800790A81 /* TeacherParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B58B831850D3B800790A81 /* TeacherParserDelegate.m */; };
 		D4B58BC71850E16000790A81 /* enseignants.xml in Resources */ = {isa = PBXBuildFile; fileRef = D4B58BC61850E16000790A81 /* enseignants.xml */; };
 		D4D7D44F1850CA8800AAD18A /* cours.xml in Resources */ = {isa = PBXBuildFile; fileRef = D4D7D44E1850CA8800AAD18A /* cours.xml */; };
 		D4D7D4521850CBDF00AAD18A /* TUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D7D4511850CBDF00AAD18A /* TUnit.m */; };
@@ -80,8 +80,8 @@
 		D4870ABF1850C96800774072 /* ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectTests.m; sourceTree = "<group>"; };
 		D4870ACB1850C99A00774072 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		D4870ACC1850C99A00774072 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
-		D4B58B821850D3B800790A81 /* MyXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyXMLParserDelegate.h; sourceTree = "<group>"; };
-		D4B58B831850D3B800790A81 /* MyXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyXMLParserDelegate.m; sourceTree = "<group>"; };
+		D4B58B821850D3B800790A81 /* TeacherParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherParserDelegate.h; sourceTree = "<group>"; };
+		D4B58B831850D3B800790A81 /* TeacherParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherParserDelegate.m; sourceTree = "<group>"; };
 		D4B58BC61850E16000790A81 /* enseignants.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = enseignants.xml; sourceTree = "<group>"; };
 		D4D7D44E1850CA8800AAD18A /* cours.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cours.xml; sourceTree = "<group>"; };
 		D4D7D4501850CBDF00AAD18A /* TUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnit.h; sourceTree = "<group>"; };
@@ -205,8 +205,8 @@
 				D4B58BC61850E16000790A81 /* enseignants.xml */,
 				D4870AAC1850C96800774072 /* Images.xcassets */,
 				D4870AA31850C96800774072 /* Main.storyboard */,
-				D4B58B821850D3B800790A81 /* MyXMLParserDelegate.h */,
-				D4B58B831850D3B800790A81 /* MyXMLParserDelegate.m */,
+				D4B58B821850D3B800790A81 /* TeacherParserDelegate.h */,
+				D4B58B831850D3B800790A81 /* TeacherParserDelegate.m */,
 				D4870A981850C96800774072 /* Supporting Files */,
 				D4870ACB1850C99A00774072 /* Teacher.h */,
 				D4870ACC1850C99A00774072 /* Teacher.m */,
@@ -359,7 +359,7 @@
 				D4870AA21850C96800774072 /* AppDelegate.m in Sources */,
 				D4D7D4551850CC4A00AAD18A /* Diploma.m in Sources */,
 				D42B61DF185A28570054F3F2 /* DetailViewController.m in Sources */,
-				D4B58B841850D3B800790A81 /* MyXMLParserDelegate.m in Sources */,
+				D4B58B841850D3B800790A81 /* TeacherParserDelegate.m in Sources */,
 				D4870A9E1850C96800774072 /* main.m in Sources */,
 				D4D7D4521850CBDF00AAD18A /* TUnit.m in Sources */,
 				D42B61DC185A1DA80054F3F2 /* TeacherViewController.m in Sources */,
