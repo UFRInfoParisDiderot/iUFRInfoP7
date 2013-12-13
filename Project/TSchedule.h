@@ -10,9 +10,7 @@
 
 @interface TSchedule : NSObject
 
-@property NSString *idTSchedule;
-@property NSString *idTeacher; // FIXME id or teacher directly ?
-//@property Teacher *teacher;
+@property NSString *idTeacher;
 @property NSString *day;
 @property NSString *begin;
 @property NSString *end;

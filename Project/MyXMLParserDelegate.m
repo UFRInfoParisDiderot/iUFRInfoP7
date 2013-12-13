@@ -22,7 +22,6 @@
 (NSString *)qName attributes:
 (NSDictionary *)attributeDict
 {
-    
     if ([elementName isEqualToString:@"enseignants"]) {
         //creating the dictionary
         teachers = [[NSMutableArray alloc] init];
@@ -30,7 +29,6 @@
     
     if ([elementName isEqualToString:@"enseignant"]) {
         currentTeacher = [[Teacher alloc] init];
-        
         // adding the current teacher in the dictionary, with his id for key
         NSString *teacherId = [attributeDict objectForKey:@"id"];
         if (teacherId) {
