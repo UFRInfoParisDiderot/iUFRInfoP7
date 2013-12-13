@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TSchedule.h"
 
 @interface TUnit : NSObject
+
+@property NSString *name;
+@property TSchedule *CM, *TD, *TP;
+@property NSString *idTUnit;
 
 @end

@@ -54,7 +54,7 @@
     AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     // Return the number of rows in the section.
     // NSLog(@"count %d",[d.dparser.contents count]);
-    return [d.dparser.contents count];
+    return [d.dparser.teachers count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -64,7 +64,7 @@
     
     // Configure the cell...
     AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    Teacher *t = (Teacher *)[d.dparser.contents objectAtIndex:indexPath.row];
+    Teacher *t = (Teacher *)[d.dparser.teachers objectAtIndex:indexPath.row];
     cell.textLabel.text = [t lastname]; // [object description];
     return cell;
 }

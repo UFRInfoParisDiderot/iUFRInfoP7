@@ -8,9 +8,10 @@
 
 #import "MyXMLParserDelegate.h"
 #import "Teacher.h"
+#import "TUnit.h"
 
 @implementation MyXMLParserDelegate
-@synthesize contents;
+@synthesize teachers;
 @synthesize currentTeacher;
 @synthesize currentStringValue;
 
@@ -21,20 +22,18 @@
 (NSString *)qName attributes:
 (NSDictionary *)attributeDict
 {
-    
     if ([elementName isEqualToString:@"enseignants"]) {
         //creating the dictionary
-        contents = [[NSMutableArray alloc] init];
+        teachers = [[NSMutableArray alloc] init];
     }
     
     if ([elementName isEqualToString:@"enseignant"]) {
         currentTeacher = [[Teacher alloc] init];
-        
         // adding the current teacher in the dictionary, with his id for key
         NSString *teacherId = [attributeDict objectForKey:@"id"];
         if (teacherId) {
             currentTeacher.idteacher = teacherId;
-            [contents addObject:currentTeacher];
+            [teachers addObject:currentTeacher];
         }
     }
 

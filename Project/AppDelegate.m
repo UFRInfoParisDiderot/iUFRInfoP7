@@ -28,8 +28,8 @@
     success = [addressParser parse]; // return value not used
     // if not successful, delegate is informed of error
     if (success) {
-        for (int i=0; i<[self.dparser.contents count]; i++) {
-            Teacher *value = [self.dparser.contents objectAtIndex:i];
+        for (int i=0; i<[self.dparser.teachers count]; i++) {
+            Teacher *value = [self.dparser.teachers objectAtIndex:i];
             // do stuff
             NSLog(@"%@",value.firstname);
         }

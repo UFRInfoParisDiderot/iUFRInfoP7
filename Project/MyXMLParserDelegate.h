@@ -10,7 +10,9 @@
 #import "Teacher.h"
 
 @interface MyXMLParserDelegate : NSObject <NSXMLParserDelegate>
-@property NSMutableArray *contents;
+
+@property NSMutableArray *teachers;
 @property Teacher *currentTeacher;
+
 @property NSMutableString *currentStringValue;
 @end
