@@ -23,7 +23,7 @@
 (NSString *)qName attributes:
 (NSDictionary *)attributeDict
 {
-    NSLog(@"parser");
+    // NSLog(@"parser");
     if ([elementName isEqualToString:@"cours"]) {
         //creating the dictionary
         tUnits = [[NSMutableArray alloc] init];
@@ -51,7 +51,7 @@
 - (void) parser:(NSXMLParser *)parser foundCharacters:
 (NSString *)string
 {
-    NSLog(@"TUnitParseDelegate : foundCharacters");
+    // NSLog(@"TUnitParseDelegate : foundCharacters");
     if (!currentStringValue) {
         currentStringValue = [[NSMutableString alloc] init];
     }

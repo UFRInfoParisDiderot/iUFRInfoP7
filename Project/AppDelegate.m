@@ -40,7 +40,8 @@
     NSString *pathToFileTUnit = @"file:///Users/ufr_info/workspaces/dev-mox/mox-tp4/Project/cours.xml";
     NSURL *xmlURLTUnit = [NSURL URLWithString:pathToFileTUnit];
     NSXMLParser *addressParserTUnit;
-    
+    self.tunitparserdelegate = [[TUnitParserDelegate alloc] init];
+
     addressParserTUnit = [[NSXMLParser alloc] initWithContentsOfURL:xmlURLTUnit];
     [addressParserTUnit setDelegate:self.tunitparserdelegate];
     [addressParserTUnit setShouldResolveExternalEntities:YES];
