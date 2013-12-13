@@ -7,7 +7,7 @@
 //
 
 #import "DetailViewController.h"
-#import "AppDelegate.h"
+#import "TeacherViewController.h"
 
 @interface DetailViewController ()
 - (void)configureView;
@@ -32,8 +32,10 @@
 {
     // Update the user interface for the detail item.
     NSLog(@"configureView");
-    AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    // d.dparser.contents
+
+    TeacherViewController *d = (TeacherViewController *) [[UIApplication sharedApplication] delegate];
+    
+    NSLog(@"%@");
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
