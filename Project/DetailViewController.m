@@ -35,9 +35,11 @@
 
     TeacherViewController *d = (TeacherViewController *) [[UIApplication sharedApplication] delegate];
     
-    NSLog(@"%@");
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
+    }
+    else {
+        NSLog(@"fail");
     }
 }
 

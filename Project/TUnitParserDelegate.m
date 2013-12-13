@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Elias Abou Haydar. All rights reserved.
 //
 
-#import "TUnitParser.h"
+#import "TUnitParserDelegate.h"
 
-@implementation TUnitParser
+@implementation TUnitParserDelegate
 
 
 @synthesize tUnits;
@@ -23,6 +23,7 @@
 (NSString *)qName attributes:
 (NSDictionary *)attributeDict
 {
+    NSLog(@"parser");
     if ([elementName isEqualToString:@"cours"]) {
         //creating the dictionary
         tUnits = [[NSMutableArray alloc] init];
@@ -50,6 +51,7 @@
 - (void) parser:(NSXMLParser *)parser foundCharacters:
 (NSString *)string
 {
+    NSLog(@"TUnitParseDelegate : foundCharacters");
     if (!currentStringValue) {
         currentStringValue = [[NSMutableString alloc] init];
     }

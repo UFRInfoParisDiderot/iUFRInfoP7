@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "TeacherParserDelegate.h"
+#import "TUnitParserDelegate.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong,retain) TeacherParserDelegate *dparser;
+@property (strong,retain) TeacherParserDelegate *teacherparserdelegate;
+@property (strong,retain) TUnitParserDelegate *tunitparserdelegate;
 
 @end

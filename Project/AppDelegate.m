@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "TeacherParserDelegate.h"
 
 @implementation AppDelegate
 
@@ -15,31 +14,48 @@
 {
     BOOL success;
 
-    NSString *pathToFileTeacher =@"file:///Users/ufr_info/workspaces/dev-mox/Project/Project/enseignants.xml";
-    NSString *pathToFileTUnit =@"file:///Users/ufr_info/workspaces/dev-mox/Project/Project/cours.xml";
+    NSString *pathToFileTeacher = @"file:///Users/ufr_info/workspaces/dev-mox/mox-tp4/Project/enseignants.xml";
     
     NSURL *xmlURLTeacher = [NSURL URLWithString:pathToFileTeacher];
     NSXMLParser *addressParserTeacher;
-    self.dparser = [[TeacherParserDelegate alloc] init];
-    
-    NSURL *xmlURLTUnit = [NSURL URLWithString:pathToFileTUnit];
-    NSXMLParser *addressParserTUnit;
+    self.teacherparserdelegate = [[TeacherParserDelegate alloc] init];
     
     addressParserTeacher = [[NSXMLParser alloc] initWithContentsOfURL:xmlURLTeacher];
-    [addressParserTeacher setDelegate:self.dparser];
+    [addressParserTeacher setDelegate:self.teacherparserdelegate];
     [addressParserTeacher setShouldResolveExternalEntities:YES];
     
     success = [addressParserTeacher parse]; // return value not used
     // if not successful, delegate is informed of error
     if (success) {
-        for (int i=0; i<[self.dparser.teachers count]; i++) {
-            Teacher *value = [self.dparser.teachers objectAtIndex:i];
+        for (int i=0; i<[self.teacherparserdelegate.teachers count]; i++) {
+            Teacher *value = [self.teacherparserdelegate.teachers objectAtIndex:i];
             // do stuff
             NSLog(@"%@",value.firstname);
         }
     }
-    else { NSLog(@"parse fail"); }
+    else { NSLog(@"parse Teachers fail"); }
     
+    // parse teaching units
+    
+    NSString *pathToFileTUnit = @"file:///Users/ufr_info/workspaces/dev-mox/mox-tp4/Project/cours.xml";
+    NSURL *xmlURLTUnit = [NSURL URLWithString:pathToFileTUnit];
+    NSXMLParser *addressParserTUnit;
+    
+    addressParserTUnit = [[NSXMLParser alloc] initWithContentsOfURL:xmlURLTUnit];
+    [addressParserTUnit setDelegate:self.tunitparserdelegate];
+    [addressParserTUnit setShouldResolveExternalEntities:YES];
+    
+    NSLog(@"Parsing teaching units");
+    success = [addressParserTUnit parse];
+    if (success) {
+        NSLog(@"TUnit parse success");
+        for (int i=0; i<[self.tunitparserdelegate.tUnits count]; i++) {
+            TUnit *value = [self.tunitparserdelegate.tUnits objectAtIndex:i];
+            // do stuff
+            NSLog(@"%@",value.name);
+        }
+    }
+    else { NSLog(@"parse Teaching Units fail"); }
     return YES;
 }
 							

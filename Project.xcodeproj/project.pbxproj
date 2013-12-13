@@ -13,7 +13,7 @@
 		790F3C2E185B6FAF008EED0C /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 790F3C24185B6FAF008EED0C /* Contents.json */; };
 		790F3C2F185B6FAF008EED0C /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 790F3C26185B6FAF008EED0C /* Contents.json */; };
 		790F3C30185B6FAF008EED0C /* TSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 790F3C28185B6FAF008EED0C /* TSchedule.m */; };
-		790F3C31185B6FAF008EED0C /* TUnitParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 790F3C2A185B6FAF008EED0C /* TUnitParser.m */; };
+		790F3C31185B6FAF008EED0C /* TUnitParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 790F3C2A185B6FAF008EED0C /* TUnitParserDelegate.m */; };
 		D42B61DC185A1DA80054F3F2 /* TeacherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */; };
 		D42B61DF185A28570054F3F2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42B61DE185A28570054F3F2 /* DetailViewController.m */; };
 		D4870A921850C96800774072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A911850C96800774072 /* Foundation.framework */; };
@@ -55,8 +55,8 @@
 		790F3C26185B6FAF008EED0C /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		790F3C27185B6FAF008EED0C /* TSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSchedule.h; sourceTree = "<group>"; };
 		790F3C28185B6FAF008EED0C /* TSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSchedule.m; sourceTree = "<group>"; };
-		790F3C29185B6FAF008EED0C /* TUnitParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnitParser.h; sourceTree = "<group>"; };
-		790F3C2A185B6FAF008EED0C /* TUnitParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnitParser.m; sourceTree = "<group>"; };
+		790F3C29185B6FAF008EED0C /* TUnitParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnitParserDelegate.h; sourceTree = "<group>"; };
+		790F3C2A185B6FAF008EED0C /* TUnitParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnitParserDelegate.m; sourceTree = "<group>"; };
 		D42B61DA185A1DA80054F3F2 /* TeacherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherViewController.h; sourceTree = "<group>"; };
 		D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherViewController.m; sourceTree = "<group>"; };
 		D42B61DD185A28570054F3F2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -216,8 +216,8 @@
 				790F3C28185B6FAF008EED0C /* TSchedule.m */,
 				D4D7D4501850CBDF00AAD18A /* TUnit.h */,
 				D4D7D4511850CBDF00AAD18A /* TUnit.m */,
-				790F3C29185B6FAF008EED0C /* TUnitParser.h */,
-				790F3C2A185B6FAF008EED0C /* TUnitParser.m */,
+				790F3C29185B6FAF008EED0C /* TUnitParserDelegate.h */,
+				790F3C2A185B6FAF008EED0C /* TUnitParserDelegate.m */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -364,7 +364,7 @@
 				D4D7D4521850CBDF00AAD18A /* TUnit.m in Sources */,
 				D42B61DC185A1DA80054F3F2 /* TeacherViewController.m in Sources */,
 				790F3C30185B6FAF008EED0C /* TSchedule.m in Sources */,
-				790F3C31185B6FAF008EED0C /* TUnitParser.m in Sources */,
+				790F3C31185B6FAF008EED0C /* TUnitParserDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
