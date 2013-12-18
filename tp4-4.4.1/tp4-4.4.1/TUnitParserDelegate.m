@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Elias Abou Haydar. All rights reserved.
 //
 
-#import "TUnitParser.h"
+#import "TUnitParserDelegate.h"
 
-@implementation TUnitParser
+@implementation TUnitParserDelegate
 
 
 @synthesize tUnits;

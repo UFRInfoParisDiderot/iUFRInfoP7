@@ -16,7 +16,7 @@
 		7E6E076A186241F000A2238E /* TeacherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E075B186241F000A2238E /* TeacherViewController.m */; };
 		7E6E076B186241F000A2238E /* TSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E075D186241F000A2238E /* TSchedule.m */; };
 		7E6E076C186241F000A2238E /* TUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E075F186241F000A2238E /* TUnit.m */; };
-		7E6E076D186241F000A2238E /* TUnitParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E0761186241F000A2238E /* TUnitParser.m */; };
+		7E6E076D186241F000A2238E /* TUnitParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E0761186241F000A2238E /* TUnitParserDelegate.m */; };
 		7E6E07731862450300A2238E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E07721862450300A2238E /* main.m */; };
 		7EC903D0186240F10024F457 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC903CF186240F10024F457 /* UIKit.framework */; };
 		7EC903D2186240F10024F457 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC903D1186240F10024F457 /* Foundation.framework */; };
@@ -58,8 +58,8 @@
 		7E6E075D186241F000A2238E /* TSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSchedule.m; sourceTree = "<group>"; };
 		7E6E075E186241F000A2238E /* TUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnit.h; sourceTree = "<group>"; };
 		7E6E075F186241F000A2238E /* TUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnit.m; sourceTree = "<group>"; };
-		7E6E0760186241F000A2238E /* TUnitParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnitParser.h; sourceTree = "<group>"; };
-		7E6E0761186241F000A2238E /* TUnitParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnitParser.m; sourceTree = "<group>"; };
+		7E6E0760186241F000A2238E /* TUnitParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnitParserDelegate.h; sourceTree = "<group>"; };
+		7E6E0761186241F000A2238E /* TUnitParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnitParserDelegate.m; sourceTree = "<group>"; };
 		7E6E07721862450300A2238E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EC903CB186240F10024F457 /* tp4-4.4.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tp4-4.4.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC903CF186240F10024F457 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -128,8 +128,8 @@
 			children = (
 				7E6E0756186241F000A2238E /* TeacherParserDelegate.h */,
 				7E6E0757186241F000A2238E /* TeacherParserDelegate.m */,
-				7E6E0760186241F000A2238E /* TUnitParser.h */,
-				7E6E0761186241F000A2238E /* TUnitParser.m */,
+				7E6E0760186241F000A2238E /* TUnitParserDelegate.h */,
+				7E6E0761186241F000A2238E /* TUnitParserDelegate.m */,
 			);
 			name = Parsing;
 			sourceTree = "<group>";
@@ -327,7 +327,7 @@
 				7E6E076A186241F000A2238E /* TeacherViewController.m in Sources */,
 				7E6E076B186241F000A2238E /* TSchedule.m in Sources */,
 				7E6E076C186241F000A2238E /* TUnit.m in Sources */,
-				7E6E076D186241F000A2238E /* TUnitParser.m in Sources */,
+				7E6E076D186241F000A2238E /* TUnitParserDelegate.m in Sources */,
 				7E6E07731862450300A2238E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

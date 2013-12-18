@@ -10,7 +10,7 @@
 #import "TUnit.h"
 #import "TSchedule.h"
 
-@interface TUnitParser : NSObject <NSXMLParserDelegate>
+@interface TUnitParserDelegate : NSObject <NSXMLParserDelegate>
 
 @property NSMutableArray *tUnits;
 @property TUnit *currentTUnit;

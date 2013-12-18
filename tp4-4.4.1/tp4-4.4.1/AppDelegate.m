@@ -7,34 +7,52 @@
 //
 
 #import "AppDelegate.h"
-#import "TeacherParserDelegate.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     BOOL success;
+    NSXMLParser *parser;
+    NSURL *xmlURL;
     
-    NSString *pathToFile =@"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/enseignants.xml";
-    NSURL *xmlURL = [NSURL URLWithString:pathToFile];
+    NSString *diplomasFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/diplomes.xml";
+    NSString *teachersFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/enseignants.xml";
+    NSString *tUnitsFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/cours.xml";
     
-    NSXMLParser *addressParser;
+    // parsing teachers
+    xmlURL = [NSURL URLWithString:teachersFilePath];
     self.dparser = [[TeacherParserDelegate alloc] init];
-    
-    addressParser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
-    [addressParser setDelegate:self.dparser];
-    [addressParser setShouldResolveExternalEntities:YES];
-    
-    success = [addressParser parse]; // return value not used
-    // if not successful, delegate is informed of error
-    if (success) {
+    parser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
+    [parser setDelegate:self.dparser];
+    [parser setShouldResolveExternalEntities:YES];
+    success = [parser parse];
+    if (!success) {
+        NSLog(@"parse fail");
+    } else {
+#warning TODO delete the following test
         for (int i=0; i<[self.dparser.teachers count]; i++) {
             Teacher *value = [self.dparser.teachers objectAtIndex:i];
-            // do stuff
             NSLog(@"Nom: %@",value.firstname);
         }
     }
-    else { NSLog(@"parse fail"); }
+    
+    // parsing teaching units
+    xmlURL = [NSURL URLWithString:tUnitsFilePath];
+    self.tUnitParserDelegate = [[TUnitParserDelegate alloc] init];
+    parser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
+    [parser setDelegate:self.tUnitParserDelegate];
+    [parser setShouldResolveExternalEntities:YES];
+    success = [parser parse];
+    if (!success) {
+        NSLog(@"parse fail");
+    } else {
+#warning TODO delete the following test
+        for (int i=0; i<[self.tUnitParserDelegate.tUnits count]; i++) {
+            TUnit *value = [self.tUnitParserDelegate.tUnits objectAtIndex:i];
+            NSLog(@"Nom: %@",value.name);
+        }
+    }
     
     return YES;
 }
