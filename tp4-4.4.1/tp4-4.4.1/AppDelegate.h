@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DiplomaParserDelegate.h"
 #import "TeacherParserDelegate.h"
 #import "TUnitParserDelegate.h"
 
@@ -15,5 +16,7 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (strong,retain) TeacherParserDelegate *dparser;
 @property (strong,retain) TUnitParserDelegate *tUnitParserDelegate;
+@property (strong,retain) DiplomaParserDelegate *diplomaParserDelegate;
+@property (strong, retain) NSMutableArray *menu;
 
 @end

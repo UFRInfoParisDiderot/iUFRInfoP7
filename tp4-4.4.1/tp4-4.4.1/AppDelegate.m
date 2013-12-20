@@ -10,6 +10,8 @@
 
 @implementation AppDelegate
 
+@synthesize menu;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     BOOL success;
@@ -19,6 +21,12 @@
     NSString *diplomasFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/diplomes.xml";
     NSString *teachersFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/enseignants.xml";
     NSString *tUnitsFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/cours.xml";
+    
+    // initializing the menu
+    menu = [[NSMutableArray alloc] init];
+    [menu addObject:@"Cours"];
+    [menu addObject:@"Diplômes"];
+    [menu addObject:@"Enseignants"];
     
     // parsing teachers
     xmlURL = [NSURL URLWithString:teachersFilePath];
@@ -50,6 +58,23 @@
 #warning TODO delete the following test
         for (int i=0; i<[self.tUnitParserDelegate.tUnits count]; i++) {
             TUnit *value = [self.tUnitParserDelegate.tUnits objectAtIndex:i];
+            NSLog(@"Nom: %@",value.name);
+        }
+    }
+    
+    // parsing diplomas
+    xmlURL = [NSURL URLWithString:diplomasFilePath];
+    self.diplomaParserDelegate = [[DiplomaParserDelegate alloc] init];
+    parser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
+    [parser setDelegate:self.diplomaParserDelegate];
+    [parser setShouldResolveExternalEntities:YES];
+    success = [parser parse];
+    if (!success) {
+        NSLog(@"parse fail");
+    } else {
+#warning TODO delete the following test
+        for (int i=0; i<[self.diplomaParserDelegate.diplomas count]; i++) {
+            Diploma *value = [self.diplomaParserDelegate.diplomas objectAtIndex:i];
             NSLog(@"Nom: %@",value.name);
         }
     }

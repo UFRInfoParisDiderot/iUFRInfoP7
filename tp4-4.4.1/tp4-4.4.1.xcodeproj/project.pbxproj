@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E1AFD3D1864916D004A683A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1AFD3C1864916D004A683A /* MainViewController.m */; };
+		7E1AFD4018649EE9004A683A /* DiplomaYear.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1AFD3F18649EE9004A683A /* DiplomaYear.m */; };
+		7E1AFD431864A34A004A683A /* DiplomaParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1AFD421864A34A004A683A /* DiplomaParserDelegate.m */; };
 		7E6E0762186241F000A2238E /* cours.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7E6E074C186241F000A2238E /* cours.xml */; };
 		7E6E0763186241F000A2238E /* Diploma.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E074E186241F000A2238E /* Diploma.m */; };
 		7E6E0764186241F000A2238E /* diplomes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7E6E074F186241F000A2238E /* diplomes.xml */; };
@@ -43,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E1AFD3B1864916D004A683A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7E1AFD3C1864916D004A683A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7E1AFD3E18649EE9004A683A /* DiplomaYear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiplomaYear.h; sourceTree = "<group>"; };
+		7E1AFD3F18649EE9004A683A /* DiplomaYear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiplomaYear.m; sourceTree = "<group>"; };
+		7E1AFD411864A34A004A683A /* DiplomaParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiplomaParserDelegate.h; sourceTree = "<group>"; };
+		7E1AFD421864A34A004A683A /* DiplomaParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiplomaParserDelegate.m; sourceTree = "<group>"; };
 		7E6E074C186241F000A2238E /* cours.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cours.xml; sourceTree = "<group>"; };
 		7E6E074D186241F000A2238E /* Diploma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diploma.h; sourceTree = "<group>"; };
 		7E6E074E186241F000A2238E /* Diploma.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diploma.m; sourceTree = "<group>"; };
@@ -110,15 +119,17 @@
 				7E6E074C186241F000A2238E /* cours.xml */,
 				7E6E074D186241F000A2238E /* Diploma.h */,
 				7E6E074E186241F000A2238E /* Diploma.m */,
+				7E1AFD3E18649EE9004A683A /* DiplomaYear.h */,
+				7E1AFD3F18649EE9004A683A /* DiplomaYear.m */,
+				7E6E074F186241F000A2238E /* diplomes.xml */,
+				7E6E0755186241F000A2238E /* enseignants.xml */,
+				7E6E07721862450300A2238E /* main.m */,
 				7E6E0758186241F000A2238E /* Teacher.h */,
 				7E6E0759186241F000A2238E /* Teacher.m */,
 				7E6E075C186241F000A2238E /* TSchedule.h */,
 				7E6E075D186241F000A2238E /* TSchedule.m */,
-				7E6E07721862450300A2238E /* main.m */,
 				7E6E075E186241F000A2238E /* TUnit.h */,
 				7E6E075F186241F000A2238E /* TUnit.m */,
-				7E6E074F186241F000A2238E /* diplomes.xml */,
-				7E6E0755186241F000A2238E /* enseignants.xml */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -126,6 +137,8 @@
 		7E6E07701862421400A2238E /* Parsing */ = {
 			isa = PBXGroup;
 			children = (
+				7E1AFD411864A34A004A683A /* DiplomaParserDelegate.h */,
+				7E1AFD421864A34A004A683A /* DiplomaParserDelegate.m */,
 				7E6E0756186241F000A2238E /* TeacherParserDelegate.h */,
 				7E6E0757186241F000A2238E /* TeacherParserDelegate.m */,
 				7E6E0760186241F000A2238E /* TUnitParserDelegate.h */,
@@ -139,6 +152,8 @@
 			children = (
 				7EC903E7186240F10024F457 /* DetailViewController.h */,
 				7EC903E8186240F10024F457 /* DetailViewController.m */,
+				7E1AFD3B1864916D004A683A /* MainViewController.h */,
+				7E1AFD3C1864916D004A683A /* MainViewController.m */,
 				7EC903E4186240F10024F457 /* MasterViewController.h */,
 				7EC903E5186240F10024F457 /* MasterViewController.m */,
 				7E6E075A186241F000A2238E /* TeacherViewController.h */,
@@ -329,6 +344,9 @@
 				7E6E076C186241F000A2238E /* TUnit.m in Sources */,
 				7E6E076D186241F000A2238E /* TUnitParserDelegate.m in Sources */,
 				7E6E07731862450300A2238E /* main.m in Sources */,
+				7E1AFD3D1864916D004A683A /* MainViewController.m in Sources */,
+				7E1AFD4018649EE9004A683A /* DiplomaYear.m in Sources */,
+				7E1AFD431864A34A004A683A /* DiplomaParserDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

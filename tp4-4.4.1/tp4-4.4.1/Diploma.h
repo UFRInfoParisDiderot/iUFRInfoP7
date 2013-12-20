@@ -10,4 +10,7 @@
 
 @interface Diploma : NSObject
 
+@property NSString *name;
+@property NSMutableArray *years;
+
 @end

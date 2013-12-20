@@ -7,8 +7,6 @@
 //
 
 #import "TeacherParserDelegate.h"
-#import "Teacher.h"
-#import "TUnit.h"
 
 @implementation TeacherParserDelegate
 @synthesize teachers;

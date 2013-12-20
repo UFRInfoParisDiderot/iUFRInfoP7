@@ -14,9 +14,7 @@
 
 @property NSMutableArray *tUnits;
 @property TUnit *currentTUnit;
-
 @property TSchedule *currentTSchedule;
-
 @property NSMutableString *currentStringValue;
 
 @end

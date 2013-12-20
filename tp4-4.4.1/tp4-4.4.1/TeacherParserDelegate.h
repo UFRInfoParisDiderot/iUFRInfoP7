@@ -13,6 +13,6 @@
 
 @property NSMutableArray *teachers;
 @property Teacher *currentTeacher;
-
 @property NSMutableString *currentStringValue;
+
 @end
