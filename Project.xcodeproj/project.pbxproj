@@ -14,7 +14,6 @@
 		790F3C30185B6FAF008EED0C /* TSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 790F3C28185B6FAF008EED0C /* TSchedule.m */; };
 		790F3C31185B6FAF008EED0C /* TUnitParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 790F3C2A185B6FAF008EED0C /* TUnitParserDelegate.m */; };
 		D42B61DC185A1DA80054F3F2 /* TeacherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */; };
-		D42B61DF185A28570054F3F2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42B61DE185A28570054F3F2 /* DetailViewController.m */; };
 		D4870A921850C96800774072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A911850C96800774072 /* Foundation.framework */; };
 		D4870A941850C96800774072 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A931850C96800774072 /* CoreGraphics.framework */; };
 		D4870A961850C96800774072 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A951850C96800774072 /* UIKit.framework */; };
@@ -29,6 +28,7 @@
 		D4870ABE1850C96800774072 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4870ABC1850C96800774072 /* InfoPlist.strings */; };
 		D4870AC01850C96800774072 /* ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870ABF1850C96800774072 /* ProjectTests.m */; };
 		D4870ACE1850C99A00774072 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870ACC1850C99A00774072 /* Teacher.m */; };
+		D4982CAC187CAC4C002299B4 /* TeacherDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4982CAB187CAC4C002299B4 /* TeacherDetailViewController.m */; };
 		D49BEC59185B7F9400BB5DC3 /* TUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49BEC58185B7F9400BB5DC3 /* TUnitViewController.m */; };
 		D4B58B841850D3B800790A81 /* TeacherParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B58B831850D3B800790A81 /* TeacherParserDelegate.m */; };
 		D4B58BC71850E16000790A81 /* enseignants.xml in Resources */ = {isa = PBXBuildFile; fileRef = D4B58BC61850E16000790A81 /* enseignants.xml */; };
@@ -58,8 +58,6 @@
 		790F3C2A185B6FAF008EED0C /* TUnitParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnitParserDelegate.m; sourceTree = "<group>"; };
 		D42B61DA185A1DA80054F3F2 /* TeacherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherViewController.h; sourceTree = "<group>"; };
 		D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherViewController.m; sourceTree = "<group>"; };
-		D42B61DD185A28570054F3F2 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		D42B61DE185A28570054F3F2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D4870A8E1850C96800774072 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4870A911850C96800774072 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4870A931850C96800774072 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +77,8 @@
 		D4870ABF1850C96800774072 /* ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectTests.m; sourceTree = "<group>"; };
 		D4870ACB1850C99A00774072 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		D4870ACC1850C99A00774072 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		D4982CAA187CAC4C002299B4 /* TeacherDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherDetailViewController.h; sourceTree = "<group>"; };
+		D4982CAB187CAC4C002299B4 /* TeacherDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherDetailViewController.m; sourceTree = "<group>"; };
 		D49BEC57185B7F9400BB5DC3 /* TUnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnitViewController.h; sourceTree = "<group>"; };
 		D49BEC58185B7F9400BB5DC3 /* TUnitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnitViewController.m; sourceTree = "<group>"; };
 		D4B58B821850D3B800790A81 /* TeacherParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherParserDelegate.h; sourceTree = "<group>"; };
@@ -237,8 +237,8 @@
 		D49BEC5A185B800000BB5DC3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D42B61DD185A28570054F3F2 /* DetailViewController.h */,
-				D42B61DE185A28570054F3F2 /* DetailViewController.m */,
+				D4982CAA187CAC4C002299B4 /* TeacherDetailViewController.h */,
+				D4982CAB187CAC4C002299B4 /* TeacherDetailViewController.m */,
 				D42B61DA185A1DA80054F3F2 /* TeacherViewController.h */,
 				D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */,
 				D49BEC57185B7F9400BB5DC3 /* TUnitViewController.h */,
@@ -391,11 +391,11 @@
 				D4870ACE1850C99A00774072 /* Teacher.m in Sources */,
 				D4870AA21850C96800774072 /* AppDelegate.m in Sources */,
 				D4D7D4551850CC4A00AAD18A /* Diploma.m in Sources */,
-				D42B61DF185A28570054F3F2 /* DetailViewController.m in Sources */,
 				D4B58B841850D3B800790A81 /* TeacherParserDelegate.m in Sources */,
 				D4870A9E1850C96800774072 /* main.m in Sources */,
 				D49BEC59185B7F9400BB5DC3 /* TUnitViewController.m in Sources */,
 				D4D7D4521850CBDF00AAD18A /* TUnit.m in Sources */,
+				D4982CAC187CAC4C002299B4 /* TeacherDetailViewController.m in Sources */,
 				D42B61DC185A1DA80054F3F2 /* TeacherViewController.m in Sources */,
 				790F3C30185B6FAF008EED0C /* TSchedule.m in Sources */,
 				790F3C31185B6FAF008EED0C /* TUnitParserDelegate.m in Sources */,
