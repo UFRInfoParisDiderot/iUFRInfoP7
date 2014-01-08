@@ -10,4 +10,7 @@
 
 @interface TeacherViewController : UITableViewController<UITableViewDataSource>
 
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+
+
 @end

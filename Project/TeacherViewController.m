@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Elias Abou Haydar. All rights reserved.
 //
 
+#import "TeacherDetailViewController.h"
 #import "TeacherViewController.h"
 #import "AppDelegate.h"
 
@@ -13,7 +14,11 @@
 
 @end
 
-@implementation TeacherViewController
+@implementation TeacherViewController {
+    NSArray *recipes;
+}
+
+@synthesize tableView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -65,8 +70,10 @@
     // Configure the cell...
     AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     Teacher *t = (Teacher *)[d.teacherparserdelegate.teachers objectAtIndex:indexPath.row];
-    cell.textLabel.text = [t lastname]; // [object description];
+    cell.textLabel.text = [t lastname];
+
     return cell;
+    
 }
 
 
@@ -88,6 +95,12 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    TeacherDetailViewController *tdvc = segue.destinationViewController;
+    AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+
+    Teacher *t = (Teacher *)[d.teacherparserdelegate.teachers objectAtIndex:indexPath.row];
+    tdvc.titletext = [t lastname];
 }
 
 @end
