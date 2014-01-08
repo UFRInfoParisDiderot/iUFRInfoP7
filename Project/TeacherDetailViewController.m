@@ -13,8 +13,11 @@
 @end
 
 @implementation TeacherDetailViewController
-@synthesize titleLabel;
-@synthesize titletext;
+@synthesize lastname;
+@synthesize firstname;
+@synthesize mail;
+@synthesize teacher;
+@synthesize image;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +31,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    titleLabel.text = titletext;
+    lastname.text = [teacher lastname];
+    firstname.text = [teacher firstname];
+    NSURL *urlmail = [teacher mail];
+    mail.text = [urlmail absoluteString];
+    // NSString *path = @"http://didascalie.informatique.univ-paris-diderot.fr/img/photo.jpg";
+    // NSURL *url = [NSURL URLWithString:path];
+    NSURL *url = [teacher image];
+    NSData *data = [[NSData alloc] initWithContentsOfURL:url];
+    
+    UIImage *tmpImage = [[UIImage alloc] initWithData:data];
+    
+    image.image = tmpImage;
+    
 }
 
 - (void)didReceiveMemoryWarning

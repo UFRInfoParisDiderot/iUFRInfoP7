@@ -15,7 +15,7 @@
 @end
 
 @implementation TeacherViewController {
-    NSArray *recipes;
+    NSArray *teachers;
 }
 
 @synthesize tableView;
@@ -100,7 +100,7 @@
     AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
 
     Teacher *t = (Teacher *)[d.teacherparserdelegate.teachers objectAtIndex:indexPath.row];
-    tdvc.titletext = [t lastname];
+    tdvc.teacher = t;
 }
 
 @end

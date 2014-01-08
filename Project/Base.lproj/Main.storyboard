@@ -104,7 +104,6 @@
         <!--Teacher Detail View Controller-->
         <scene sceneID="atg-Kc-HQJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lzr-K1-zpa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Lrh-aP-IIZ" customClass="TeacherDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JEA-QW-XmY"/>
@@ -115,11 +114,27 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeF-sZ-73d">
-                                <rect key="frame" x="20" y="78" width="280" height="26"/>
+                                <rect key="frame" x="10" y="77" width="126" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvG-d4-FRd">
+                                <rect key="frame" x="10" y="111" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YI2-7u-TYw">
+                                <rect key="frame" x="10" y="273" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41s-4B-7se">
+                                <rect key="frame" x="144" y="72" width="162" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -127,9 +142,13 @@
                     <navigationItem key="navigationItem" id="LUH-Qb-7Gw"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="titleLabel" destination="qeF-sZ-73d" id="a2a-ux-FmE"/>
+                        <outlet property="firstname" destination="DvG-d4-FRd" id="6ZG-o2-Qrf"/>
+                        <outlet property="image" destination="41s-4B-7se" id="r8e-BN-Jtb"/>
+                        <outlet property="lastname" destination="qeF-sZ-73d" id="6Dc-jW-1G1"/>
+                        <outlet property="mail" destination="YI2-7u-TYw" id="ath-eA-4W3"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzr-K1-zpa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1902" y="-767"/>
         </scene>
