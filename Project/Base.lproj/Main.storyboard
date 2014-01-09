@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="gGE-b7-L9f" kind="relationship" relationship="rootViewController" id="sMC-dw-IzZ"/>
+                        <segue destination="RM1-3o-EaO" kind="relationship" relationship="rootViewController" id="79j-If-Kq6"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
@@ -39,19 +39,16 @@
                                 <state key="normal" title="Enseignants">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="nPE-DE-QlR" kind="push" id="RlI-q4-rK1"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlZ-Z9-2iI">
-                                <rect key="frame" x="20" y="202" width="42" height="30"/>
+                                <rect key="frame" x="20" y="119" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cours">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHR-1y-ILY">
-                                <rect key="frame" x="20" y="309" width="65" height="30"/>
+                                <rect key="frame" x="20" y="157" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Diplomes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,7 +61,72 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="atb-yV-aMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664" y="-47"/>
+            <point key="canvasLocation" x="-506" y="-497"/>
+        </scene>
+        <!--View Controller - Accueil-->
+        <scene sceneID="QmZ-k4-W1H">
+            <objects>
+                <viewController id="jjk-3j-4Kg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aes-BH-Vgo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q3C-b5-4Sh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AYw-uG-kRJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TZz-s0-3lw">
+                                <rect key="frame" x="20" y="82" width="211" height="344"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Accueil" id="Hp8-7t-mz6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oap-k0-IUX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1349" y="0.0"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9BU-Yb-FCq">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="RM1-3o-EaO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kpU-w1-k4c"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="sw8-bP-KB0">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jjk-3j-4Kg" kind="relationship" relationship="viewControllers" id="Njw-Aj-Wyj"/>
+                        <segue destination="WOG-g5-rBR" kind="relationship" relationship="viewControllers" id="rTj-U9-T6R"/>
+                        <segue destination="nPE-DE-QlR" kind="relationship" relationship="viewControllers" id="64f-eI-dKa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7g-pM-ndz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="581" y="-743"/>
+        </scene>
+        <!--View Controller - Item 2-->
+        <scene sceneID="dki-IZ-FRE">
+            <objects>
+                <viewController id="WOG-g5-rBR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AT9-gO-Kri"/>
+                        <viewControllerLayoutGuide type="bottom" id="TfJ-rL-28s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5cX-0N-aLC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="hT7-Vk-cZB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFl-Dy-i1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1379" y="739"/>
         </scene>
         <!--Teacher View Controller - Enseignants-->
         <scene sceneID="QQi-Rf-dav">
@@ -92,6 +154,7 @@
                             <outlet property="delegate" destination="nPE-DE-QlR" id="5Db-8K-Jjd"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Enseignants" id="A7Y-rj-e2a"/>
                     <navigationItem key="navigationItem" title="Enseignants" id="g13-TA-amz"/>
                     <connections>
                         <outlet property="tableView" destination="cOf-Su-6go" id="m9t-AS-GLK"/>
@@ -153,6 +216,9 @@
             <point key="canvasLocation" x="1902" y="-767"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo.jpg" width="241" height="560"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
