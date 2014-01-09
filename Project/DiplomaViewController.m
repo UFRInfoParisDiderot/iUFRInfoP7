@@ -1,21 +1,21 @@
 //
-//  TUnitViewController.m
+//  DiplomaViewController.m
 //  Project
 //
-//  Created by Elias Abou Haydar on 13/12/13.
-//  Copyright (c) 2013 Elias Abou Haydar. All rights reserved.
+//  Created by Elias Abou Haydar on 09/01/14.
+//  Copyright (c) 2014 Elias Abou Haydar. All rights reserved.
 //
 
-#import "TUnitViewController.h"
-#import "TUnitDetailViewController.h"
+#import "DiplomaViewController.h"
+#import "DiplomaDetailViewController.h"
 #import "AppDelegate.h"
 
-@interface TUnitViewController ()
+@interface DiplomaViewController ()
 
 @end
 
-@implementation TUnitViewController {
-    NSArray *tunits;
+@implementation DiplomaViewController{
+    NSArray *diplomas;
 }
 
 @synthesize tableView;
@@ -38,7 +38,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -51,29 +50,34 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    return [d.teacherParserDelegate.teachers count];
+    return [d.diplomaParserDelegate.diplomas count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%d",indexPath.row);
-    static NSString *CellIdentifier = @"TUnitCell";
+    static NSString *CellIdentifier = @"DiplomaCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-
+ 
+    // Configure the cell...
     AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    TUnit *t = (TUnit *)[d. tUnitParserDelegate.tUnits objectAtIndex:indexPath.row];
-    cell.textLabel.text = [t name];
+    Diploma *diploma = (Diploma *)[d.diplomaParserDelegate.diplomas objectAtIndex:indexPath.row];
+    cell.textLabel.text = [diploma name];
+    
     return cell;
 }
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    TUnitDetailViewController *tdvc = segue.destinationViewController;
+    DiplomaDetailViewController *ddvc = segue.destinationViewController;
     AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     
-    TUnit *tunit = (TUnit *)[d.tUnitParserDelegate.tUnits objectAtIndex:indexPath.row];
-    tdvc.tunit = tunit;
+    Diploma *diploma = (Diploma *)[d.diplomaParserDelegate.diplomas objectAtIndex:indexPath.row];
+    NSLog(@"%@",diploma.name);
+    NSLog(@"-------------------------");
+    ddvc.diploma = diploma;
+    NSLog(@"+++++++++++++++++++++++++");
 }
 
 @end

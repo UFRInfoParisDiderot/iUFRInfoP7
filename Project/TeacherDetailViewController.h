@@ -13,8 +13,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *lastname;
 @property (strong, nonatomic) IBOutlet UILabel *firstname;
 @property (weak, nonatomic) IBOutlet UIImageView *image;
-@property (strong, nonatomic) IBOutlet UILabel *webpage;
-@property (strong, nonatomic) IBOutlet UILabel *mail;
 @property (strong, nonatomic) Teacher *teacher;
 
 

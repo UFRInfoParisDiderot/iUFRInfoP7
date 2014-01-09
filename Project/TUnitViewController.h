@@ -9,4 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TUnitViewController : UITableViewController<UITableViewDataSource>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+
 @end

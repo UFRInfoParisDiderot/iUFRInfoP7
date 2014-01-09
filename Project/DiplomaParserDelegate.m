@@ -25,6 +25,7 @@
     if ([elementName isEqualToString:@"diplomes"]) {
         //creating the dictionary
         diplomas = [[NSMutableArray alloc] init];
+        // NSLog(@"diplomas init");
     }
     
     if ([elementName isEqualToString:@"diplome"]) {

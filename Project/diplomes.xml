@@ -1,26 +1,26 @@
 <diplomes>
-
-  <licence>
-    <annee id="L1">
-      <UE>1</UE>
-    </annee>
-    <annee id="L2">
-      <UE>2</UE>
-    </annee>
-    <annee id="L3">
-      <UE>3</UE>
-      <UE>4</UE>
-    </annee>
-  </licence>
-
-  <master>
-    <annee id="M1">
-      <UE>5</UE>
-    </annee>
-    <annee id="M2">
-      <UE>6</UE>
-      <UE>7</UE>
-    </annee>
-  </master>
-
+    
+    <diplome id="licence">
+        <annee id="L1">
+            <UE>1</UE>
+        </annee>
+        <annee id="L2">
+            <UE>2</UE>
+        </annee>
+        <annee id="L3">
+            <UE>3</UE>
+            <UE>4</UE>
+        </annee>
+    </diplome>
+    
+    <diplome id="master">
+        <annee id="M1">
+            <UE>5</UE>
+        </annee>
+        <annee id="M2">
+            <UE>6</UE>
+            <UE>7</UE>
+        </annee>
+    </diplome>
+    
 </diplomes>

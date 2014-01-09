@@ -17,10 +17,6 @@
 - (id)init
 {
     self = [super init];
-    /*if (self) {
-        self.firstname = @"John";
-        self.lastname = @"Doe";
-    }*/
     return self;
 }
 
