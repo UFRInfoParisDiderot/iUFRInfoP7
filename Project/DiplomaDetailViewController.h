@@ -11,6 +11,7 @@
 
 @interface DiplomaDetailViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) Diploma *diploma;
 
 @end

@@ -11,9 +11,9 @@
 @interface Diploma : NSObject
 
 @property NSString *name;
-@property NSMutableArray *years;
 @property NSURL *url1;
 @property NSURL *url2;
+@property NSMutableArray *tUnits;
 
 - (id)init;
 

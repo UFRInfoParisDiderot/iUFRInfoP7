@@ -39,5 +39,13 @@
     <mail>Jean-Baptiste.Yunes@univ-paris-diderot.fr</mail>
     <photo>http://didel.script.univ-paris-diderot.fr/platform/users/2fb07c540a462778b7d1c305f3ffe2e8/jby.jpg</photo>
   </enseignant>
+  
+  <enseignant id="5">
+      <nom>Armand</nom>
+      <prenom>François</prenom>
+      <web>http://www.pps.univ-paris-diderot.fr/~armand/</web>
+      <mail>Francois.Armand@orange.fr</mail>
+      <photo>https://scontent-b-mxp.xx.fbcdn.net/hphotos-frc3/542088_585266018156399_1366693357_n.jpg</photo>
+  </enseignant>
 
 </enseignants>

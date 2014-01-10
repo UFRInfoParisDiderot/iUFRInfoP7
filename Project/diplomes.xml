@@ -1,37 +1,30 @@
 <diplomes>
-    
-    <diplome id="licence">
-        <annee id="L1">
-            <UE>1</UE>
-            <url1>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=L1,1</url1>
-
-            <url2>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=L1,2</url2>
+    <annee id="L1">
+        <UE>1</UE>
+        <url1>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=L1,1</url1>
+        <url2>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=L1,2</url2>
         </annee>
-        <annee id="L2">
-            <UE>2</UE>
-            <url1>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=L2,1</url1>
-            <url2>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=L2,2</url2>
-        </annee>
-        <annee id="L3">
-            <UE>3</UE>
-            <UE>4</UE>
-            <url1>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=L3,1</url1>
-            <url2>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=L3,2</url2>
-        </annee>
-    </diplome>
-    
-    <diplome id="master">
-        <annee id="M1">
-            <UE>5</UE>
-            <url1>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=M1,1</url1>
-            <url2>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=M1,2</url2>
-        </annee>
-        <annee id="M2">
-            <UE>6</UE>
-            <UE>7</UE>
-            <url1>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=M2,1</url1>
-            <url2>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=M2,2</url2>
-        </annee>
-    </diplome>
+    <annee id="L2">
+        <UE>2</UE>
+        <url1>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=L2,1</url1>
+        <url2>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=L2,2</url2>
+    </annee>
+    <annee id="L3">
+        <UE>3</UE>
+        <UE>4</UE>
+        <url1>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=L3,1</url1>
+        <url2>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=L3,2</url2>
+    </annee>
+    <annee id="M1">
+        <UE>5</UE>
+        <url1>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=M1,1</url1>
+        <url2>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=M1,2</url2>
+    </annee>
+    <annee id="M2">
+        <UE>6</UE>
+        <UE>7</UE>
+        <url1>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=M2,1</url1>
+        <url2>http://magma.informatique.univ-paris-diderot.fr/~ufr/UFR2013-2014/EDT/visualiserEmploiDuTemps.php?quoi=M2,2</url2>
+    </annee>
     
 </diplomes>

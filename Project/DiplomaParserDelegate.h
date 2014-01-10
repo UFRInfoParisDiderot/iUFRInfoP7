@@ -8,13 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "Diploma.h"
-#import "DiplomaYear.h"
 
 @interface DiplomaParserDelegate : NSObject<NSXMLParserDelegate>
 
 @property NSMutableArray *diplomas;
 @property Diploma *currentDiploma;
-@property DiplomaYear *currentDiplomaYear;
 @property NSMutableString *currentStringValue;
 
 @end

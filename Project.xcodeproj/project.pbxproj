@@ -15,7 +15,6 @@
 		790F3C31185B6FAF008EED0C /* TUnitParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 790F3C2A185B6FAF008EED0C /* TUnitParserDelegate.m */; };
 		D427CA52187EA59600C131F9 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D427CA50187EA59600C131F9 /* logo.jpg */; };
 		D427CA57187EAABF00C131F9 /* DiplomaParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D427CA54187EAABF00C131F9 /* DiplomaParserDelegate.m */; };
-		D427CA58187EAABF00C131F9 /* DiplomaYear.m in Sources */ = {isa = PBXBuildFile; fileRef = D427CA56187EAABF00C131F9 /* DiplomaYear.m */; };
 		D42B61DC185A1DA80054F3F2 /* TeacherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */; };
 		D46B0EF0187EFD8400F682A7 /* TUnitDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46B0EEF187EFD8400F682A7 /* TUnitDetailViewController.m */; };
 		D46B0EF5187F02B000F682A7 /* HomeIcon_Big.png in Resources */ = {isa = PBXBuildFile; fileRef = D46B0EF3187F02B000F682A7 /* HomeIcon_Big.png */; };
@@ -39,6 +38,7 @@
 		D4870ACE1850C99A00774072 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870ACC1850C99A00774072 /* Teacher.m */; };
 		D4982CAC187CAC4C002299B4 /* TeacherDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4982CAB187CAC4C002299B4 /* TeacherDetailViewController.m */; };
 		D49BEC59185B7F9400BB5DC3 /* TUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49BEC58185B7F9400BB5DC3 /* TUnitViewController.m */; };
+		D4A29BED188020D700308E35 /* TeacherUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A29BEC188020D700308E35 /* TeacherUnitViewController.m */; };
 		D4B58B841850D3B800790A81 /* TeacherParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B58B831850D3B800790A81 /* TeacherParserDelegate.m */; };
 		D4B58BC71850E16000790A81 /* enseignants.xml in Resources */ = {isa = PBXBuildFile; fileRef = D4B58BC61850E16000790A81 /* enseignants.xml */; };
 		D4D32EA8187ED07300F95970 /* DiplomaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D32EA7187ED07300F95970 /* DiplomaDetailViewController.m */; };
@@ -70,8 +70,6 @@
 		D427CA51187EA59600C131F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = en; path = logo.jpg; sourceTree = "<group>"; };
 		D427CA53187EAABF00C131F9 /* DiplomaParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiplomaParserDelegate.h; sourceTree = "<group>"; };
 		D427CA54187EAABF00C131F9 /* DiplomaParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiplomaParserDelegate.m; sourceTree = "<group>"; };
-		D427CA55187EAABF00C131F9 /* DiplomaYear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiplomaYear.h; sourceTree = "<group>"; };
-		D427CA56187EAABF00C131F9 /* DiplomaYear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiplomaYear.m; sourceTree = "<group>"; };
 		D42B61DA185A1DA80054F3F2 /* TeacherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherViewController.h; sourceTree = "<group>"; };
 		D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherViewController.m; sourceTree = "<group>"; };
 		D46B0EEE187EFD8400F682A7 /* TUnitDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnitDetailViewController.h; sourceTree = "<group>"; };
@@ -106,6 +104,8 @@
 		D4982CAB187CAC4C002299B4 /* TeacherDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherDetailViewController.m; sourceTree = "<group>"; };
 		D49BEC57185B7F9400BB5DC3 /* TUnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnitViewController.h; sourceTree = "<group>"; };
 		D49BEC58185B7F9400BB5DC3 /* TUnitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnitViewController.m; sourceTree = "<group>"; };
+		D4A29BEB188020D700308E35 /* TeacherUnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherUnitViewController.h; path = ../TeacherUnitViewController.h; sourceTree = "<group>"; };
+		D4A29BEC188020D700308E35 /* TeacherUnitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherUnitViewController.m; path = ../TeacherUnitViewController.m; sourceTree = "<group>"; };
 		D4B58B821850D3B800790A81 /* TeacherParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherParserDelegate.h; sourceTree = "<group>"; };
 		D4B58B831850D3B800790A81 /* TeacherParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherParserDelegate.m; sourceTree = "<group>"; };
 		D4B58BC61850E16000790A81 /* enseignants.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = enseignants.xml; sourceTree = "<group>"; };
@@ -288,6 +288,8 @@
 				D4F2ABC6187EB493002E04A6 /* DiplomaViewController.m */,
 				D46B0EFE187F593E00F682A7 /* HomeViewController.h */,
 				D46B0EFF187F593E00F682A7 /* HomeViewController.m */,
+				D4A29BEB188020D700308E35 /* TeacherUnitViewController.h */,
+				D4A29BEC188020D700308E35 /* TeacherUnitViewController.m */,
 				D42B61DA185A1DA80054F3F2 /* TeacherViewController.h */,
 				D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */,
 				D49BEC57185B7F9400BB5DC3 /* TUnitViewController.h */,
@@ -311,10 +313,8 @@
 		D49BEC5C185B808600BB5DC3 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				D427CA55187EAABF00C131F9 /* DiplomaYear.h */,
-				D427CA56187EAABF00C131F9 /* DiplomaYear.m */,
-				D4D7D4531850CC4A00AAD18A /* Diploma.h */,
 				D4D7D4541850CC4A00AAD18A /* Diploma.m */,
+				D4D7D4531850CC4A00AAD18A /* Diploma.h */,
 				D4870ACB1850C99A00774072 /* Teacher.h */,
 				D4870ACC1850C99A00774072 /* Teacher.m */,
 				790F3C27185B6FAF008EED0C /* TSchedule.h */,
@@ -461,8 +461,8 @@
 				D4F2ABC7187EB493002E04A6 /* DiplomaViewController.m in Sources */,
 				D42B61DC185A1DA80054F3F2 /* TeacherViewController.m in Sources */,
 				D46B0EF0187EFD8400F682A7 /* TUnitDetailViewController.m in Sources */,
-				D427CA58187EAABF00C131F9 /* DiplomaYear.m in Sources */,
 				D46B0EFD187F4C5800F682A7 /* WebPageViewController.m in Sources */,
+				D4A29BED188020D700308E35 /* TeacherUnitViewController.m in Sources */,
 				790F3C30185B6FAF008EED0C /* TSchedule.m in Sources */,
 				790F3C31185B6FAF008EED0C /* TUnitParserDelegate.m in Sources */,
 			);

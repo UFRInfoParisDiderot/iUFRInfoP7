@@ -27,7 +27,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.title = tunit.name;
+    NSString *tmp  = tunit.CM.begin;
+    NSLog(@"%@",tmp);
+    
 }
 
 - (void)didReceiveMemoryWarning

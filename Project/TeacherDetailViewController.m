@@ -9,6 +9,8 @@
 #import "TeacherDetailViewController.h"
 #import "WebPageViewController.h"
 #import <MessageUI/MessageUI.h>
+#import "AppDelegate.h"
+#import "TeacherUnitViewController.h"
 
 @interface TeacherDetailViewController ()<
     MFMailComposeViewControllerDelegate,
@@ -43,7 +45,7 @@
     UIImage *tmpImage = [[UIImage alloc] initWithData:data];
     
     image.image = tmpImage;
-
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -102,6 +104,7 @@
 	[self presentViewController:picker animated:YES completion:NULL];
 }
 
+
 #pragma mark - Delegate Methods
 
 //	mailComposeController:didFinishWithResult:
@@ -141,11 +144,76 @@
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    WebPageViewController *wpvc = segue.destinationViewController;
-    wpvc.url = [teacher webpage];
+
     
-    // hide the tab bar in the destination view
-    wpvc.hidesBottomBarWhenPushed = YES;
+    if ([segue.identifier isEqualToString:@"webPageSegue"]) {
+        WebPageViewController *wpvc = segue.destinationViewController;
+        wpvc.url = [teacher webpage];
+        // hide the tab bar in the destination view
+        wpvc.hidesBottomBarWhenPushed = YES;
+    }
+    else if ([segue.identifier isEqualToString:@"listUnitSegue"]) {
+        // affichage des matieres enseignees par chaque enseignant
+        AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+        
+        
+        NSMutableDictionary *resultCM = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary *resultTD = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary *resultTP = [[NSMutableDictionary alloc] init];
+        for (int i=0; i<[d.teacherParserDelegate.teachers count]; i++) {
+            Teacher *t = [d.teacherParserDelegate.teachers objectAtIndex:i];
+            NSString *idTeacher = t.idteacher;
+            NSMutableArray *CMi = [[NSMutableArray alloc] init];
+            NSMutableArray *TDi = [[NSMutableArray alloc] init];
+            NSMutableArray *TPi = [[NSMutableArray alloc] init];
+            for (int j=0; j<[d.tUnitParserDelegate.tUnits count]; j++) {
+                TUnit *tUnit =[d.tUnitParserDelegate.tUnits objectAtIndex:j];
+                if (tUnit.CM.idTeacher != NULL && [tUnit.CM.idTeacher compare:idTeacher] == 0) {
+                    [CMi addObject:tUnit];
+                }
+                if (tUnit.TD.idTeacher != NULL && [tUnit.TD.idTeacher compare:idTeacher] == 0) {
+                    [TDi addObject:tUnit];
+                }
+                if (tUnit.TP.idTeacher != NULL && [tUnit.TP.idTeacher compare:idTeacher] == 0) {
+                    [TPi addObject:tUnit];
+                }
+            }
+            
+            [resultCM setObject:CMi forKey:idTeacher];
+            [resultTD setObject:TDi forKey:idTeacher];
+            [resultTP setObject:TPi forKey:idTeacher];
+            
+        }
+        
+        // affichage des cours de JB
+        NSMutableArray *teacherUnits = [[NSMutableArray alloc]init];
+        
+        NSLog(@"Cours de %@: ",teacher.lastname);
+        // recuperer l'id de JB
+        NSString *JBId = teacher.idteacher;
+        NSLog(@"Cours magistraux: ");
+        NSMutableArray *tmp = [resultCM objectForKey:JBId];
+        for (TUnit *t in tmp) {
+            NSLog(@"%@", t.name);
+            [teacherUnits addObject:t];
+        }
+        NSLog(@"Travaux diriges: ");
+        tmp = [resultTD objectForKey:JBId];
+        for (TUnit *t in tmp) {
+            NSLog(@"%@", t.name);
+            [teacherUnits addObject:t];
+        }
+        NSLog(@"Travaux pratiques: ");
+        tmp = [resultTP objectForKey:JBId];
+        for (TUnit *t in tmp) {
+            [teacherUnits addObject:t];
+            NSLog(@"%@", t.name);
+        }
+        
+        TeacherUnitViewController *tuvc = segue.destinationViewController;
+        tuvc.teacherUnits = teacherUnits;
+
+    }
 
 }
 

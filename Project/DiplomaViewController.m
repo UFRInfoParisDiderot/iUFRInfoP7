@@ -53,6 +53,7 @@
     return [d.diplomaParserDelegate.diplomas count];
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"DiplomaCell";
@@ -61,8 +62,6 @@
     // Configure the cell...
     AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     Diploma *diploma = (Diploma *)[d.diplomaParserDelegate.diplomas objectAtIndex:indexPath.row];
-# warning fix me!!
-    // DiplomaYear *y = (DiplomaYear *)[d.diplomaParserDelegate]
     cell.textLabel.text = [diploma name];
     
     return cell;

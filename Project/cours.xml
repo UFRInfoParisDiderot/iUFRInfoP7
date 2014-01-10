@@ -30,9 +30,9 @@
         </TP>
     </UE>
     <UE id="1">
-        <intitule>IF1</intitule>
+        <intitule>IF2</intitule>
         <CM>
-            <enseignant>1</enseignant>
+            <enseignant>5</enseignant>
             <salle>5C</salle>
             <horaire>
                 <jour>Lundi</jour>

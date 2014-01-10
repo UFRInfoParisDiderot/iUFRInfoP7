@@ -12,7 +12,6 @@
 
 @synthesize currentDiploma;
 @synthesize currentStringValue;
-@synthesize currentDiplomaYear;
 @synthesize diplomas;
 
 // parsing starting elements
@@ -28,26 +27,15 @@
         // NSLog(@"diplomas init");
     }
     
-    if ([elementName isEqualToString:@"diplome"]) {
+    if ([elementName isEqualToString:@"annee"]) {
         currentDiploma = [[Diploma alloc] init];
         [diplomas addObject:currentDiploma];
-        NSString *diplomaId = [attributeDict objectForKey:@"id"];
-        if (diplomaId) {
-            currentDiploma.name = diplomaId;
+        NSString *yearid = [attributeDict objectForKey:@"id"];
+        if (yearid) {
+            currentDiploma.name = yearid;
+            currentDiploma.tUnits = [[NSMutableArray alloc] init];
         }
     }
-    
-    if ([elementName isEqualToString:@"annee"]) {
-        currentDiplomaYear = [[DiplomaYear alloc] init];
-        [currentDiploma.years addObject:currentDiplomaYear];
-        NSString *diplomaYearId = [attributeDict objectForKey:@"id"];
-        if (diplomaYearId) {
-            currentDiplomaYear.name = diplomaYearId;
-            currentDiplomaYear.tUnits = [[NSMutableArray alloc] init];
-        }
-    }
-        
-    
 }
 
 // parsing characters elements
@@ -69,18 +57,22 @@
     
     NSString *value = [currentStringValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
-    if ([elementName isEqualToString:@"UE"])
-        [currentDiplomaYear.tUnits addObject:value];
+    if ([elementName isEqualToString:@"UE"]) {
+        // NSLog(@"- %@", );
+        [currentDiploma.tUnits addObject:value];
+    }
     
     if ([elementName isEqualToString:@"url1"]) {
     NSString *value = [currentStringValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         // NSLog(@"%@",value);
+        currentDiploma.url1 = [NSURL URLWithString:value];
         currentDiploma.url1 = [NSURL URLWithString:value];
     }
     
     if ([elementName isEqualToString:@"url2"]) {
         NSString *value = [currentStringValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         // NSLog(@"%@",value);
+        currentDiploma.url2 = [NSURL URLWithString:value];
         currentDiploma.url2 = [NSURL URLWithString:value];
     }
     

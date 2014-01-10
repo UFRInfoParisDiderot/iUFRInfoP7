@@ -31,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.title = diploma.name;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +46,7 @@
 
     if ([segue.identifier isEqualToString:@"edt1"]) {
         wpvc.url = diploma.url1;
+        // NSLog(@"%@",wpvc.url);
     }
     else if ([segue.identifier isEqualToString:@"edt2"]) {
         wpvc.url = diploma.url2;

@@ -56,12 +56,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%d",indexPath.row);
+    // NSLog(@"%d",indexPath.row);
     static NSString *CellIdentifier = @"TUnitCell";
     UITableViewCell *cell = [tabView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 
     AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
-    TUnit *t = (TUnit *)[d. tUnitParserDelegate.tUnits objectAtIndex:indexPath.row];
+    TUnit *t = (TUnit *)[d.tUnitParserDelegate.tUnits objectAtIndex:indexPath.row];
     cell.textLabel.text = [t name];
     return cell;
 }

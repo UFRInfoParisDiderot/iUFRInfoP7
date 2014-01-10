@@ -43,9 +43,9 @@
         NSLog(@"parse fail");
     } else {
         /* for (int i=0; i<[self.teacherParserDelegate.teachers count]; i++) {
-            Teacher *value = [self.teacherParserDelegate.teachers objectAtIndex:i];
-            NSLog(@"Nom: %@",value.firstname);
-        }*/
+         Teacher *value = [self.teacherParserDelegate.teachers objectAtIndex:i];
+         NSLog(@"Nom: %@",value.firstname);
+         }*/
     }
     
     // parsing teaching units
@@ -59,9 +59,9 @@
         NSLog(@"parse fail");
     } else {
         /*for (int i=0; i<[self.tUnitParserDelegate.tUnits count]; i++) {
-            TUnit *value = [self.tUnitParserDelegate.tUnits objectAtIndex:i];
-            NSLog(@"Nom: %@",value.name);
-        }*/
+         TUnit *value = [self.tUnitParserDelegate.tUnits objectAtIndex:i];
+         NSLog(@"Nom: %@",value.name);
+         }*/
     }
     
     // parsing diplomas
@@ -74,10 +74,7 @@
     if (!success) {
         NSLog(@"parse fail");
     } else {
-        /* for (int i=0; i<[self.diplomaParserDelegate.diplomas count]; i++) {
-            Diploma *value = [self.diplomaParserDelegate.diplomas objectAtIndex:i];
-            NSLog(@"Nom: %@",value.name);
-        }*/
+
     }
 
     return YES;
@@ -85,27 +82,27 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-  
+    
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-
+    
 }
 
 @end
