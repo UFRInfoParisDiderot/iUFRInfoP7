@@ -143,6 +143,10 @@
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     WebPageViewController *wpvc = segue.destinationViewController;
     wpvc.url = [teacher webpage];
+    
+    // hide the tab bar in the destination view
+    wpvc.hidesBottomBarWhenPushed = YES;
+
 }
 
 

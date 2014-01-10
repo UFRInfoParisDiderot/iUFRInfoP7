@@ -26,7 +26,7 @@
             <objects>
                 <tableViewController id="954-qa-zfe" customClass="DiplomaViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HNJ-Rx-cyG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -65,7 +65,7 @@
                         <viewControllerLayoutGuide type="bottom" id="VQ9-ST-guv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vls-4j-Kxy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wP-u0-H6F">
@@ -104,7 +104,7 @@
             <objects>
                 <tableViewController id="epO-Ji-9qK" customClass="TUnitViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0ce-KK-gsP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -143,7 +143,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aP0-ae-r6a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Dd0-ak-Vre">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -178,11 +178,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Q3C-b5-4Sh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AYw-uG-kRJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TZz-s0-3lw">
-                                <rect key="frame" x="0.0" y="73" width="320" height="224"/>
+                                <rect key="frame" x="0.0" y="73" width="320" height="136"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="L'application de l'UFR d'informatique" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MAn-YW-uSB">
@@ -245,7 +245,7 @@
             <objects>
                 <tableViewController id="nPE-DE-QlR" customClass="TeacherViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cOf-Su-6go">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -285,7 +285,7 @@
                         <viewControllerLayoutGuide type="bottom" id="WbK-zi-DWa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="szI-nl-CEq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeF-sZ-73d">
@@ -349,44 +349,91 @@
         <scene sceneID="3KH-4U-MdC">
             <objects>
                 <viewController id="nzB-7h-0to" customClass="WebPageViewController" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" id="i4U-32-pcq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PqM-2H-6Ft"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vvw-sF-nGx"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="BMV-vJ-99a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </webView>
-                    <toolbarItems>
-                        <barButtonItem systemItem="rewind" id="2oT-5k-3PW">
-                            <connections>
-                                <action selector="goBack" destination="i4U-32-pcq" id="bwB-LL-JP2"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Ixg-e4-II0"/>
-                        <barButtonItem systemItem="fastForward" id="aFO-ha-TJ4">
-                            <connections>
-                                <action selector="goForward" destination="i4U-32-pcq" id="LKX-vw-3aG"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="HBg-kC-OVz"/>
-                        <barButtonItem systemItem="refresh" id="Vwh-fi-JUh">
-                            <connections>
-                                <action selector="reload" destination="i4U-32-pcq" id="nEx-Dm-xvR"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="s2T-XK-9NJ"/>
-                        <barButtonItem systemItem="stop" id="Z1G-Xc-OHQ">
-                            <connections>
-                                <action selector="stopLoading" destination="i4U-32-pcq" id="rfH-1S-N1a"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZC-dF-YzX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="ThX-ZE-ZnE">
+                                        <connections>
+                                            <action selector="goBack" destination="FtA-H2-pRh" id="UxH-NV-czk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="uSz-bU-Xhh"/>
+                                    <barButtonItem systemItem="fastForward" id="iIg-5A-7IA">
+                                        <connections>
+                                            <action selector="goForward" destination="FtA-H2-pRh" id="t7Y-ag-SXg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="LOL-nD-NlD"/>
+                                    <barButtonItem systemItem="refresh" id="YL1-bF-lmO">
+                                        <connections>
+                                            <action selector="reload" destination="FtA-H2-pRh" id="wjP-Iv-3yN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="PZ8-az-yow"/>
+                                    <barButtonItem systemItem="stop" id="0uH-QR-U07">
+                                        <connections>
+                                            <action selector="stopLoading" destination="FtA-H2-pRh" id="ZBs-gI-m1e"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FtA-H2-pRh">
+                                <rect key="frame" x="0.0" y="65" width="320" height="415"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </webView>
+                        </subviews>
+                    </scrollView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Web page" id="4TE-GS-wOe"/>
                     <connections>
-                        <outlet property="webview" destination="i4U-32-pcq" id="79s-xd-V0A"/>
+                        <outlet property="webview" destination="FtA-H2-pRh" id="u2b-mv-dze"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ttm-C4-NcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2444" y="-750"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="h38-fR-bL0">
+            <objects>
+                <viewController id="z0I-e8-hFA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RAU-FL-rQE"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Lq-Si-PiO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E1d-lr-IBY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pe6-rh-fkJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VId-B2-xBg">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </webView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZP0-RK-rC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2444" y="-189"/>
         </scene>
     </scenes>
     <resources>
@@ -397,6 +444,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
