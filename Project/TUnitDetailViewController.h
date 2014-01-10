@@ -12,6 +12,9 @@
 @interface TUnitDetailViewController : UIViewController
 
 @property (strong, nonatomic) TUnit *tunit;
+@property (weak, nonatomic) IBOutlet UILabel *cmTime;
+@property (weak, nonatomic) IBOutlet UILabel *tpTime;
+@property (weak, nonatomic) IBOutlet UILabel *tdTime;
 
 
 @end
