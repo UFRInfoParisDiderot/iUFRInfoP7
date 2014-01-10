@@ -111,6 +111,15 @@
                 <fin>14h30</fin>
             </horaire>
         </TD>
+        <TP>
+            <enseignant>0</enseignant>
+            <salle>478F</salle>
+            <horaire>
+                <jour>Lundi</jour>
+                <debut>16h30</debut>
+                <fin>18h30</fin>
+            </horaire>
+        </TP>
     </UE>
     
     <UE id="4">
@@ -155,6 +164,15 @@
                 <fin>14h30</fin>
             </horaire>
         </CM>
+        <TD>
+            <enseignant>0</enseignant>
+            <salle>478F</salle>
+            <horaire>
+                <jour>Lundi</jour>
+                <debut>16h30</debut>
+                <fin>18h30</fin>
+            </horaire>
+        </TD>
         <TP>
             <enseignant>0</enseignant>
             <salle>478F</salle>
@@ -177,6 +195,15 @@
                 <fin>14h30</fin>
             </horaire>
         </CM>
+        <TD>
+            <enseignant>0</enseignant>
+            <salle>478F</salle>
+            <horaire>
+                <jour>Lundi</jour>
+                <debut>16h30</debut>
+                <fin>18h30</fin>
+            </horaire>
+        </TD>
         <TP>
             <enseignant>0</enseignant>
             <salle>478F</salle>
@@ -199,6 +226,15 @@
                 <fin>14h30</fin>
             </horaire>
         </CM>
+        <TD>
+            <enseignant>0</enseignant>
+            <salle>478F</salle>
+            <horaire>
+                <jour>Lundi</jour>
+                <debut>16h30</debut>
+                <fin>18h30</fin>
+            </horaire>
+        </TD>
         <TP>
             <enseignant>0</enseignant>
             <salle>478F</salle>

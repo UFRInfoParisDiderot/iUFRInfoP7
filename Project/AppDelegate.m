@@ -18,9 +18,9 @@
     NSXMLParser *parser;
     NSURL *xmlURL;
     
-    // NSString *diplomasFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/diplomes.xml";
-    // NSString *teachersFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/enseignants.xml";
-    // NSString *tUnitsFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/cours.xml";
+    // NSString *diplomasFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~abou/diplomes.xml";
+    // NSString *teachersFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~abou/enseignants.xml";
+    // NSString *tUnitsFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~abou/cours.xml";
     
     NSString *diplomasFilePath = @"file:///Users/ufr_info/workspaces/dev-mox/mox-tp4/Project/diplomes.xml";
     NSString *teachersFilePath = @"file:///Users/ufr_info/workspaces/dev-mox/mox-tp4/Project/enseignants.xml";
@@ -42,10 +42,7 @@
     if (!success) {
         NSLog(@"parse fail");
     } else {
-        /* for (int i=0; i<[self.teacherParserDelegate.teachers count]; i++) {
-         Teacher *value = [self.teacherParserDelegate.teachers objectAtIndex:i];
-         NSLog(@"Nom: %@",value.firstname);
-         }*/
+
     }
     
     // parsing teaching units
@@ -58,10 +55,7 @@
     if (!success) {
         NSLog(@"parse fail");
     } else {
-        /*for (int i=0; i<[self.tUnitParserDelegate.tUnits count]; i++) {
-         TUnit *value = [self.tUnitParserDelegate.tUnits objectAtIndex:i];
-         NSLog(@"Nom: %@",value.name);
-         }*/
+
     }
     
     // parsing diplomas
