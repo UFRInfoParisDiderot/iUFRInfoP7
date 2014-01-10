@@ -18,13 +18,13 @@
     NSXMLParser *parser;
     NSURL *xmlURL;
     
-    NSString *diplomasFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/diplomes.xml";
-    NSString *teachersFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/enseignants.xml";
-    NSString *tUnitsFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/cours.xml";
+    // NSString *diplomasFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/diplomes.xml";
+    // NSString *teachersFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/enseignants.xml";
+    // NSString *tUnitsFilePath = @"http://nivose.informatique.univ-paris-diderot.fr:8087/~richard/cours.xml";
     
-    // NSString *diplomasFilePath = @"file:///Users/ufr_info/workspaces/dev-mox/mox-tp4/Project/diplomes.xml";
-    //NSString *teachersFilePath = @"file:///Users/ufr_info/workspaces/dev-mox/mox-tp4/Project/enseignants.xml";
-    // NSString *tUnitsFilePath = @"file:///Users/ufr_info/workspaces/dev-mox/mox-tp4/Project/cours.xml";
+    NSString *diplomasFilePath = @"file:///Users/ufr_info/workspaces/dev-mox/mox-tp4/Project/diplomes.xml";
+    NSString *teachersFilePath = @"file:///Users/ufr_info/workspaces/dev-mox/mox-tp4/Project/enseignants.xml";
+    NSString *tUnitsFilePath = @"file:///Users/ufr_info/workspaces/dev-mox/mox-tp4/Project/cours.xml";
     
     // initializing the menu
     menu = [[NSMutableArray alloc] init];

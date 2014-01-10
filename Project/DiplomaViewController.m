@@ -18,7 +18,7 @@
     NSArray *diplomas;
 }
 
-@synthesize tableView;
+@synthesize tabView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -56,11 +56,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"DiplomaCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tabView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
  
     // Configure the cell...
     AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     Diploma *diploma = (Diploma *)[d.diplomaParserDelegate.diplomas objectAtIndex:indexPath.row];
+# warning fix me!!
+    // DiplomaYear *y = (DiplomaYear *)[d.diplomaParserDelegate]
     cell.textLabel.text = [diploma name];
     
     return cell;
@@ -74,10 +76,7 @@
     AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     
     Diploma *diploma = (Diploma *)[d.diplomaParserDelegate.diplomas objectAtIndex:indexPath.row];
-    NSLog(@"%@",diploma.name);
-    NSLog(@"-------------------------");
     ddvc.diploma = diploma;
-    NSLog(@"+++++++++++++++++++++++++");
 }
 
 @end

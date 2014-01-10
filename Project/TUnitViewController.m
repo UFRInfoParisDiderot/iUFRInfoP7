@@ -18,7 +18,7 @@
     NSArray *tunits;
 }
 
-@synthesize tableView;
+@synthesize tabView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -58,7 +58,7 @@
 {
     NSLog(@"%d",indexPath.row);
     static NSString *CellIdentifier = @"TUnitCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tabView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 
     AppDelegate *d = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     TUnit *t = (TUnit *)[d. tUnitParserDelegate.tUnits objectAtIndex:indexPath.row];

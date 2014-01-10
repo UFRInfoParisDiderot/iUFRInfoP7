@@ -72,6 +72,18 @@
     if ([elementName isEqualToString:@"UE"])
         [currentDiplomaYear.tUnits addObject:value];
     
+    if ([elementName isEqualToString:@"url1"]) {
+    NSString *value = [currentStringValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        // NSLog(@"%@",value);
+        currentDiploma.url1 = [NSURL URLWithString:value];
+    }
+    
+    if ([elementName isEqualToString:@"url2"]) {
+        NSString *value = [currentStringValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        // NSLog(@"%@",value);
+        currentDiploma.url2 = [NSURL URLWithString:value];
+    }
+    
     currentStringValue = nil;
 }
 

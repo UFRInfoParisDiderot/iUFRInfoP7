@@ -238,7 +238,6 @@
 			children = (
 				D49BEC5C185B808600BB5DC3 /* Data Model */,
 				D49BEC5D185B80AC00BB5DC3 /* Delegates */,
-				D46B0F01187F5B9500F682A7 /* Home.png */,
 				D4870AAC1850C96800774072 /* Images.xcassets */,
 				D4870AA31850C96800774072 /* Main.storyboard */,
 				D49BEC5B185B803300BB5DC3 /* Resources */,
@@ -251,6 +250,7 @@
 		D4870A981850C96800774072 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D46B0F01187F5B9500F682A7 /* Home.png */,
 				D46B0EF3187F02B000F682A7 /* HomeIcon_Big.png */,
 				D46B0EF4187F02B000F682A7 /* HomeIcon_Small.png */,
 				D427CA50187EA59600C131F9 /* logo.jpg */,

@@ -10,6 +10,6 @@
 
 @interface DiplomaViewController : UITableViewController<UITableViewDataSource>
 
-@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UITableView *tabView;
 
 @end

@@ -10,7 +10,7 @@
 
 @interface TUnitViewController : UITableViewController<UITableViewDataSource>
 
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UITableView *tabView;
 
 
 @end

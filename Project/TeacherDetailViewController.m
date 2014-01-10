@@ -43,7 +43,7 @@
     UIImage *tmpImage = [[UIImage alloc] initWithData:data];
     
     image.image = tmpImage;
-    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -93,7 +93,7 @@
 	picker.mailComposeDelegate = self;
 	
     // Set up contents
-    NSURL *adress = [teacher mail];
+    NSURL *adress = (NSURL *)[teacher mail];
     NSString *str = [adress absoluteString];
     
 	NSArray *toRecipients = [NSArray arrayWithObjects:str, nil] ;

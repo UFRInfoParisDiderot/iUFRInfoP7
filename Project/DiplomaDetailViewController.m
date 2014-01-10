@@ -7,12 +7,15 @@
 //
 
 #import "DiplomaDetailViewController.h"
+#import "WebPageViewController.h"
+#import "AppDelegate.h"
 
 @interface DiplomaDetailViewController ()
 
 @end
 
 @implementation DiplomaDetailViewController
+
 @synthesize diploma;
 
 
@@ -35,6 +38,20 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    WebPageViewController *wpvc = segue.destinationViewController;
+
+    if ([segue.identifier isEqualToString:@"edt1"]) {
+        wpvc.url = diploma.url1;
+    }
+    else if ([segue.identifier isEqualToString:@"edt2"]) {
+        wpvc.url = diploma.url2;
+    }
+    wpvc.hidesBottomBarWhenPushed = YES;
+
 }
 
 @end

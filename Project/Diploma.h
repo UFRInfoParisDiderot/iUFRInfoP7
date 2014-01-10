@@ -12,6 +12,8 @@
 
 @property NSString *name;
 @property NSMutableArray *years;
+@property NSURL *url1;
+@property NSURL *url2;
 
 - (id)init;
 
