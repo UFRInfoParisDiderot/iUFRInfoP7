@@ -20,6 +20,9 @@
 		D46B0EF0187EFD8400F682A7 /* TUnitDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46B0EEF187EFD8400F682A7 /* TUnitDetailViewController.m */; };
 		D46B0EF5187F02B000F682A7 /* HomeIcon_Big.png in Resources */ = {isa = PBXBuildFile; fileRef = D46B0EF3187F02B000F682A7 /* HomeIcon_Big.png */; };
 		D46B0EF6187F02B000F682A7 /* HomeIcon_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D46B0EF4187F02B000F682A7 /* HomeIcon_Small.png */; };
+		D46B0EFD187F4C5800F682A7 /* WebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46B0EFC187F4C5800F682A7 /* WebPageViewController.m */; };
+		D46B0F00187F593E00F682A7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46B0EFF187F593E00F682A7 /* HomeViewController.m */; };
+		D46B0F02187F5B9500F682A7 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = D46B0F01187F5B9500F682A7 /* Home.png */; };
 		D4870A921850C96800774072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A911850C96800774072 /* Foundation.framework */; };
 		D4870A941850C96800774072 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A931850C96800774072 /* CoreGraphics.framework */; };
 		D4870A961850C96800774072 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A951850C96800774072 /* UIKit.framework */; };
@@ -75,6 +78,11 @@
 		D46B0EEF187EFD8400F682A7 /* TUnitDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnitDetailViewController.m; sourceTree = "<group>"; };
 		D46B0EF3187F02B000F682A7 /* HomeIcon_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon_Big.png; sourceTree = "<group>"; };
 		D46B0EF4187F02B000F682A7 /* HomeIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon_Small.png; sourceTree = "<group>"; };
+		D46B0EFB187F4C5800F682A7 /* WebPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPageViewController.h; sourceTree = "<group>"; };
+		D46B0EFC187F4C5800F682A7 /* WebPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPageViewController.m; sourceTree = "<group>"; };
+		D46B0EFE187F593E00F682A7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D46B0EFF187F593E00F682A7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D46B0F01187F5B9500F682A7 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
 		D4870A8E1850C96800774072 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4870A911850C96800774072 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4870A931850C96800774072 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -230,6 +238,7 @@
 			children = (
 				D49BEC5C185B808600BB5DC3 /* Data Model */,
 				D49BEC5D185B80AC00BB5DC3 /* Delegates */,
+				D46B0F01187F5B9500F682A7 /* Home.png */,
 				D4870AAC1850C96800774072 /* Images.xcassets */,
 				D4870AA31850C96800774072 /* Main.storyboard */,
 				D49BEC5B185B803300BB5DC3 /* Resources */,
@@ -277,10 +286,14 @@
 				D46B0EF7187F08E800F682A7 /* DetailViewControllers */,
 				D4F2ABC5187EB493002E04A6 /* DiplomaViewController.h */,
 				D4F2ABC6187EB493002E04A6 /* DiplomaViewController.m */,
+				D46B0EFE187F593E00F682A7 /* HomeViewController.h */,
+				D46B0EFF187F593E00F682A7 /* HomeViewController.m */,
 				D42B61DA185A1DA80054F3F2 /* TeacherViewController.h */,
 				D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */,
 				D49BEC57185B7F9400BB5DC3 /* TUnitViewController.h */,
 				D49BEC58185B7F9400BB5DC3 /* TUnitViewController.m */,
+				D46B0EFB187F4C5800F682A7 /* WebPageViewController.h */,
+				D46B0EFC187F4C5800F682A7 /* WebPageViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -407,6 +420,7 @@
 				D4870AAD1850C96800774072 /* Images.xcassets in Resources */,
 				D4B58BC71850E16000790A81 /* enseignants.xml in Resources */,
 				D4870A9C1850C96800774072 /* InfoPlist.strings in Resources */,
+				D46B0F02187F5B9500F682A7 /* Home.png in Resources */,
 				D4870AA51850C96800774072 /* Main.storyboard in Resources */,
 				D46B0EF5187F02B000F682A7 /* HomeIcon_Big.png in Resources */,
 				790F3C2C185B6FAF008EED0C /* diplomes.xml in Resources */,
@@ -438,6 +452,7 @@
 				D4870ACE1850C99A00774072 /* Teacher.m in Sources */,
 				D4870AA21850C96800774072 /* AppDelegate.m in Sources */,
 				D4D7D4551850CC4A00AAD18A /* Diploma.m in Sources */,
+				D46B0F00187F593E00F682A7 /* HomeViewController.m in Sources */,
 				D4B58B841850D3B800790A81 /* TeacherParserDelegate.m in Sources */,
 				D4870A9E1850C96800774072 /* main.m in Sources */,
 				D49BEC59185B7F9400BB5DC3 /* TUnitViewController.m in Sources */,
@@ -447,6 +462,7 @@
 				D42B61DC185A1DA80054F3F2 /* TeacherViewController.m in Sources */,
 				D46B0EF0187EFD8400F682A7 /* TUnitDetailViewController.m in Sources */,
 				D427CA58187EAABF00C131F9 /* DiplomaYear.m in Sources */,
+				D46B0EFD187F4C5800F682A7 /* WebPageViewController.m in Sources */,
 				790F3C30185B6FAF008EED0C /* TSchedule.m in Sources */,
 				790F3C31185B6FAF008EED0C /* TUnitParserDelegate.m in Sources */,
 			);

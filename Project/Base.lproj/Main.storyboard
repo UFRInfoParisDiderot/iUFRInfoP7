@@ -9,7 +9,7 @@
         <scene sceneID="fOC-3j-WOh">
             <objects>
                 <navigationController definesPresentationContext="YES" id="G8f-mc-I9w" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Accueil" id="jcY-VL-HzB"/>
+                    <tabBarItem key="tabBarItem" title="Accueil" image="HomeIcon_Small.png" id="jcY-VL-HzB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fba-or-fT3">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -68,8 +68,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wP-u0-H6F">
-                                <rect key="frame" x="139" y="127" width="32" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wP-u0-H6F">
+                                <rect key="frame" x="20" y="62" width="119" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -87,7 +87,7 @@
         <scene sceneID="gVD-T1-5Ne">
             <objects>
                 <navigationController definesPresentationContext="YES" id="0y8-o2-XrX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Diplomes" id="HU0-Pk-Uhd"/>
+                    <tabBarItem key="tabBarItem" title="Diplomes" image="HomeIcon_Small.png" id="HU0-Pk-Uhd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z8N-cP-0dO">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -157,7 +157,7 @@
         <scene sceneID="PS0-c3-CBX">
             <objects>
                 <navigationController definesPresentationContext="YES" id="MKC-Ge-cMN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Cours" id="Cjs-Rr-lH9"/>
+                    <tabBarItem key="tabBarItem" title="Cours" image="HomeIcon_Small.png" id="Cjs-Rr-lH9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OMj-Hk-ddj">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="622" y="762"/>
         </scene>
-        <!--View Controller - Accueil-->
+        <!--Home View Controller - Accueil-->
         <scene sceneID="QmZ-k4-W1H">
             <objects>
-                <viewController id="jjk-3j-4Kg" sceneMemberID="viewController">
+                <viewController id="jjk-3j-4Kg" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aes-BH-Vgo"/>
                         <viewControllerLayoutGuide type="bottom" id="Q3C-b5-4Sh"/>
@@ -181,14 +181,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TZz-s0-3lw">
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TZz-s0-3lw">
                                 <rect key="frame" x="0.0" y="73" width="320" height="224"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="L'application de l'UFR d'informatique" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MAn-YW-uSB">
+                                <rect key="frame" x="20" y="261" width="273" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Accueil" id="Hp8-7t-mz6"/>
+                    <tabBarItem key="tabBarItem" title="Accueil" image="HomeIcon_Small.png" id="Hp8-7t-mz6"/>
                     <navigationItem key="navigationItem" title="Accueil" id="7g2-vR-BH9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oap-k0-IUX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -221,7 +228,7 @@
         <scene sceneID="Mxn-wc-hb2">
             <objects>
                 <navigationController definesPresentationContext="YES" id="ptJ-5a-Fd9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Enseignants" id="WvR-9W-Hcq"/>
+                    <tabBarItem key="tabBarItem" title="Enseignants" image="HomeIcon_Small.png" id="WvR-9W-Hcq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PGc-3Y-EBH">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -282,37 +289,37 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeF-sZ-73d">
-                                <rect key="frame" x="10" y="77" width="126" height="26"/>
+                                <rect key="frame" x="20" y="298" width="126" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvG-d4-FRd">
-                                <rect key="frame" x="10" y="111" width="126" height="21"/>
+                                <rect key="frame" x="20" y="332" width="126" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="41s-4B-7se">
-                                <rect key="frame" x="144" y="72" width="162" height="191"/>
+                                <rect key="frame" x="20" y="76" width="280" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw1-FV-nbv">
-                                <rect key="frame" x="76" y="271" width="60" height="36"/>
+                                <rect key="frame" x="20" y="361" width="84" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="www">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="page perso">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="nzB-7h-0to" kind="push" id="HPx-9Q-lzc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEz-jp-bif">
-                                <rect key="frame" x="158" y="271" width="135" height="37"/>
+                                <rect key="frame" x="0.0" y="387" width="135" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
-                                <state key="normal" title="Compose Mail">
+                                <state key="normal" title="envoyer mail">
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -338,28 +345,44 @@
             </objects>
             <point key="canvasLocation" x="1902" y="-767"/>
         </scene>
-        <!--View Controller - Web page-->
+        <!--Web Page View Controller - Web page-->
         <scene sceneID="3KH-4U-MdC">
             <objects>
-                <viewController id="nzB-7h-0to" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8Mr-SF-B7j"/>
-                        <viewControllerLayoutGuide type="bottom" id="jPi-US-Mpe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tLd-PI-kU8">
+                <viewController id="nzB-7h-0to" customClass="WebPageViewController" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="i4U-32-pcq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8UV-lo-3LS">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </webView>
+                    <toolbarItems>
+                        <barButtonItem systemItem="rewind" id="2oT-5k-3PW">
+                            <connections>
+                                <action selector="goBack" destination="i4U-32-pcq" id="bwB-LL-JP2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Ixg-e4-II0"/>
+                        <barButtonItem systemItem="fastForward" id="aFO-ha-TJ4">
+                            <connections>
+                                <action selector="goForward" destination="i4U-32-pcq" id="LKX-vw-3aG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="HBg-kC-OVz"/>
+                        <barButtonItem systemItem="refresh" id="Vwh-fi-JUh">
+                            <connections>
+                                <action selector="reload" destination="i4U-32-pcq" id="nEx-Dm-xvR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="s2T-XK-9NJ"/>
+                        <barButtonItem systemItem="stop" id="Z1G-Xc-OHQ">
+                            <connections>
+                                <action selector="stopLoading" destination="i4U-32-pcq" id="rfH-1S-N1a"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Web page" id="4TE-GS-wOe"/>
+                    <connections>
+                        <outlet property="webview" destination="i4U-32-pcq" id="79s-xd-V0A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ttm-C4-NcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -368,6 +391,7 @@
     </scenes>
     <resources>
         <image name="HomeIcon_Big.png" width="118" height="120"/>
+        <image name="HomeIcon_Small.png" width="26" height="27"/>
         <image name="logo.jpg" width="560" height="241"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

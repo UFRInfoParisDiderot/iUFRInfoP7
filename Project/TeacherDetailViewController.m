@@ -7,11 +7,11 @@
 //
 
 #import "TeacherDetailViewController.h"
+#import "WebPageViewController.h"
 #import <MessageUI/MessageUI.h>
 
 @interface TeacherDetailViewController ()<
     MFMailComposeViewControllerDelegate,
-    MFMessageComposeViewControllerDelegate,
     UINavigationControllerDelegate
 >
 
@@ -55,11 +55,9 @@
 #pragma mark - Rotation
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_6_0
-// -------------------------------------------------------------------------------
 //	shouldAutorotateToInterfaceOrientation:
 //  Disable rotation on iOS 5.x and earlier.  Note, for iOS 6.0 and later all you
 //  need is "UISupportedInterfaceOrientations" defined in your Info.plist
-// -------------------------------------------------------------------------------
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
@@ -68,51 +66,38 @@
 
 #pragma mark - Actions
 
-// -------------------------------------------------------------------------------
 //	showMailPicker:
 //  IBAction for the Compose Mail button.
-// -------------------------------------------------------------------------------
 - (IBAction)showMailPicker:(id)sender
 {
-    // You must check that the current device can send email messages before you
-    // attempt to create an instance of MFMailComposeViewController.  If the
-    // device can not send email messages,
-    // [[MFMailComposeViewController alloc] init] will return nil.  Your app
-    // will crash when it calls -presentViewController:animated:completion: with
-    // a nil view controller.
     if ([MFMailComposeViewController canSendMail])
-        // The device can send email.
     {
         [self displayMailComposerSheet];
     }
     else
-        // The device can not send email.
     {
-        // self.feedbackMsg.hidden = NO;
-		// self.feedbackMsg.text = @"Device not configured to send mail.";
+        UIAlertView *alert;
+        alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Device not configured to send mail" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
     }
 }
 
 #pragma mark - Compose Mail
 
-// -------------------------------------------------------------------------------
 //	displayMailComposerSheet
 //  Displays an email composition interface inside the application.
 //  Populates all the Mail fields.
-// -------------------------------------------------------------------------------
 - (void)displayMailComposerSheet
 {
 	MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
 	picker.mailComposeDelegate = self;
-		
-	// Set up recipients
-    // NSString *str = [teacher mail];
-    // NSLog(@"%@",str);
-    //str = [str lowercaseString];
-    //NSLog(@"%@",str);
+	
+    // Set up contents
+    NSURL *adress = [teacher mail];
+    NSString *str = [adress absoluteString];
     
-	NSArray *toRecipients = [NSArray arrayWithObject:@"first@example.com"];
-	[picker setToRecipients:toRecipients];
+	NSArray *toRecipients = [NSArray arrayWithObjects:str, nil] ;
+    [picker setToRecipients:toRecipients];
 	
 	[self presentViewController:picker animated:YES completion:NULL];
 }
@@ -134,6 +119,7 @@
             [alert show];
 			break;
 		case MFMailComposeResultSaved:
+            
             alert = [[UIAlertView alloc] initWithTitle:@"Information" message:@"Mail saved" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
 			break;
@@ -152,6 +138,11 @@
 	}
     
 	[self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    WebPageViewController *wpvc = segue.destinationViewController;
+    wpvc.url = [teacher webpage];
 }
 
 
