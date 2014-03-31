@@ -188,26 +188,26 @@
         // affichage des cours de JB
         NSMutableArray *teacherUnits = [[NSMutableArray alloc]init];
         
-        NSLog(@"Cours de %@: ",teacher.lastname);
+        // NSLog(@"Cours de %@: ",teacher.lastname);
         // recuperer l'id de JB
         NSString *JBId = teacher.idteacher;
-        NSLog(@"Cours magistraux: ");
+        // NSLog(@"Cours magistraux: ");
         NSMutableArray *tmp = [resultCM objectForKey:JBId];
         for (TUnit *t in tmp) {
-            NSLog(@"%@", t.name);
+            // NSLog(@"%@", t.name);
             [teacherUnits addObject:t];
         }
-        NSLog(@"Travaux diriges: ");
+        // NSLog(@"Travaux diriges: ");
         tmp = [resultTD objectForKey:JBId];
         for (TUnit *t in tmp) {
-            NSLog(@"%@", t.name);
+            // NSLog(@"%@", t.name);
             [teacherUnits addObject:t];
         }
-        NSLog(@"Travaux pratiques: ");
+        // NSLog(@"Travaux pratiques: ");
         tmp = [resultTP objectForKey:JBId];
         for (TUnit *t in tmp) {
             [teacherUnits addObject:t];
-            NSLog(@"%@", t.name);
+            // NSLog(@"%@", t.name);
         }
         
         TeacherUnitViewController *tuvc = segue.destinationViewController;

@@ -21,7 +21,6 @@
 		D46B0EF6187F02B000F682A7 /* HomeIcon_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D46B0EF4187F02B000F682A7 /* HomeIcon_Small.png */; };
 		D46B0EFD187F4C5800F682A7 /* WebPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46B0EFC187F4C5800F682A7 /* WebPageViewController.m */; };
 		D46B0F00187F593E00F682A7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46B0EFF187F593E00F682A7 /* HomeViewController.m */; };
-		D46B0F02187F5B9500F682A7 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = D46B0F01187F5B9500F682A7 /* Home.png */; };
 		D4870A921850C96800774072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A911850C96800774072 /* Foundation.framework */; };
 		D4870A941850C96800774072 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A931850C96800774072 /* CoreGraphics.framework */; };
 		D4870A961850C96800774072 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A951850C96800774072 /* UIKit.framework */; };
@@ -33,12 +32,10 @@
 		D4870AB41850C96800774072 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870AB31850C96800774072 /* XCTest.framework */; };
 		D4870AB51850C96800774072 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A911850C96800774072 /* Foundation.framework */; };
 		D4870AB61850C96800774072 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4870A951850C96800774072 /* UIKit.framework */; };
-		D4870ABE1850C96800774072 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4870ABC1850C96800774072 /* InfoPlist.strings */; };
-		D4870AC01850C96800774072 /* ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870ABF1850C96800774072 /* ProjectTests.m */; };
 		D4870ACE1850C99A00774072 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = D4870ACC1850C99A00774072 /* Teacher.m */; };
+		D490AD1A18808237005D468C /* TeacherUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D490AD1918808237005D468C /* TeacherUnitViewController.m */; };
 		D4982CAC187CAC4C002299B4 /* TeacherDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4982CAB187CAC4C002299B4 /* TeacherDetailViewController.m */; };
 		D49BEC59185B7F9400BB5DC3 /* TUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49BEC58185B7F9400BB5DC3 /* TUnitViewController.m */; };
-		D4A29BED188020D700308E35 /* TeacherUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A29BEC188020D700308E35 /* TeacherUnitViewController.m */; };
 		D4B58B841850D3B800790A81 /* TeacherParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B58B831850D3B800790A81 /* TeacherParserDelegate.m */; };
 		D4B58BC71850E16000790A81 /* enseignants.xml in Resources */ = {isa = PBXBuildFile; fileRef = D4B58BC61850E16000790A81 /* enseignants.xml */; };
 		D4D32EA8187ED07300F95970 /* DiplomaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D32EA7187ED07300F95970 /* DiplomaDetailViewController.m */; };
@@ -80,32 +77,28 @@
 		D46B0EFC187F4C5800F682A7 /* WebPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPageViewController.m; sourceTree = "<group>"; };
 		D46B0EFE187F593E00F682A7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		D46B0EFF187F593E00F682A7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		D46B0F01187F5B9500F682A7 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
-		D4870A8E1850C96800774072 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4870A8E1850C96800774072 /* AbouHaydarRichard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbouHaydarRichard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4870A911850C96800774072 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4870A931850C96800774072 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D4870A951850C96800774072 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D4870A991850C96800774072 /* Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Project-Info.plist"; sourceTree = "<group>"; };
+		D4870A991850C96800774072 /* AbouHaydarRichard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AbouHaydarRichard-Info.plist"; sourceTree = "<group>"; };
 		D4870A9B1850C96800774072 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4870A9D1850C96800774072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D4870A9F1850C96800774072 /* Project-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project-Prefix.pch"; sourceTree = "<group>"; };
+		D4870A9F1850C96800774072 /* AbouHaydarRichard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AbouHaydarRichard-Prefix.pch"; sourceTree = "<group>"; };
 		D4870AA01850C96800774072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4870AA11850C96800774072 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D4870AA41850C96800774072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4870AAC1850C96800774072 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D4870AB21850C96800774072 /* ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4870AB21850C96800774072 /* AbouHaydarRichardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbouHaydarRichardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4870AB31850C96800774072 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D4870ABB1850C96800774072 /* ProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProjectTests-Info.plist"; sourceTree = "<group>"; };
-		D4870ABD1850C96800774072 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D4870ABF1850C96800774072 /* ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectTests.m; sourceTree = "<group>"; };
 		D4870ACB1850C99A00774072 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		D4870ACC1850C99A00774072 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		D490AD1818808228005D468C /* TeacherUnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherUnitViewController.h; sourceTree = "<group>"; };
+		D490AD1918808237005D468C /* TeacherUnitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherUnitViewController.m; sourceTree = "<group>"; };
 		D4982CAA187CAC4C002299B4 /* TeacherDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherDetailViewController.h; sourceTree = "<group>"; };
 		D4982CAB187CAC4C002299B4 /* TeacherDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherDetailViewController.m; sourceTree = "<group>"; };
 		D49BEC57185B7F9400BB5DC3 /* TUnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUnitViewController.h; sourceTree = "<group>"; };
 		D49BEC58185B7F9400BB5DC3 /* TUnitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUnitViewController.m; sourceTree = "<group>"; };
-		D4A29BEB188020D700308E35 /* TeacherUnitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherUnitViewController.h; path = ../TeacherUnitViewController.h; sourceTree = "<group>"; };
-		D4A29BEC188020D700308E35 /* TeacherUnitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherUnitViewController.m; path = ../TeacherUnitViewController.m; sourceTree = "<group>"; };
 		D4B58B821850D3B800790A81 /* TeacherParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeacherParserDelegate.h; sourceTree = "<group>"; };
 		D4B58B831850D3B800790A81 /* TeacherParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeacherParserDelegate.m; sourceTree = "<group>"; };
 		D4B58BC61850E16000790A81 /* enseignants.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = enseignants.xml; sourceTree = "<group>"; };
@@ -209,15 +202,14 @@
 				790F3C22185B6FAF008EED0C /* Images.xcassets */,
 				D4870A8F1850C96800774072 /* Products */,
 				D4870A971850C96800774072 /* Project */,
-				D4870AB91850C96800774072 /* ProjectTests */,
 			);
 			sourceTree = "<group>";
 		};
 		D4870A8F1850C96800774072 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4870A8E1850C96800774072 /* Project.app */,
-				D4870AB21850C96800774072 /* ProjectTests.xctest */,
+				D4870A8E1850C96800774072 /* AbouHaydarRichard.app */,
+				D4870AB21850C96800774072 /* AbouHaydarRichardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,32 +242,13 @@
 		D4870A981850C96800774072 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D46B0F01187F5B9500F682A7 /* Home.png */,
 				D46B0EF3187F02B000F682A7 /* HomeIcon_Big.png */,
 				D46B0EF4187F02B000F682A7 /* HomeIcon_Small.png */,
 				D427CA50187EA59600C131F9 /* logo.jpg */,
-				D4870A991850C96800774072 /* Project-Info.plist */,
+				D4870A991850C96800774072 /* AbouHaydarRichard-Info.plist */,
 				D4870A9A1850C96800774072 /* InfoPlist.strings */,
 				D4870A9D1850C96800774072 /* main.m */,
-				D4870A9F1850C96800774072 /* Project-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D4870AB91850C96800774072 /* ProjectTests */ = {
-			isa = PBXGroup;
-			children = (
-				D4870ABF1850C96800774072 /* ProjectTests.m */,
-				D4870ABA1850C96800774072 /* Supporting Files */,
-			);
-			path = ProjectTests;
-			sourceTree = "<group>";
-		};
-		D4870ABA1850C96800774072 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D4870ABB1850C96800774072 /* ProjectTests-Info.plist */,
-				D4870ABC1850C96800774072 /* InfoPlist.strings */,
+				D4870A9F1850C96800774072 /* AbouHaydarRichard-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -288,8 +261,8 @@
 				D4F2ABC6187EB493002E04A6 /* DiplomaViewController.m */,
 				D46B0EFE187F593E00F682A7 /* HomeViewController.h */,
 				D46B0EFF187F593E00F682A7 /* HomeViewController.m */,
-				D4A29BEB188020D700308E35 /* TeacherUnitViewController.h */,
-				D4A29BEC188020D700308E35 /* TeacherUnitViewController.m */,
+				D490AD1818808228005D468C /* TeacherUnitViewController.h */,
+				D490AD1918808237005D468C /* TeacherUnitViewController.m */,
 				D42B61DA185A1DA80054F3F2 /* TeacherViewController.h */,
 				D42B61DB185A1DA80054F3F2 /* TeacherViewController.m */,
 				D49BEC57185B7F9400BB5DC3 /* TUnitViewController.h */,
@@ -343,9 +316,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4870A8D1850C96800774072 /* Project */ = {
+		D4870A8D1850C96800774072 /* AbouHaydarRichard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4870AC31850C96800774072 /* Build configuration list for PBXNativeTarget "Project" */;
+			buildConfigurationList = D4870AC31850C96800774072 /* Build configuration list for PBXNativeTarget "AbouHaydarRichard" */;
 			buildPhases = (
 				D4870A8A1850C96800774072 /* Sources */,
 				D4870A8B1850C96800774072 /* Frameworks */,
@@ -355,14 +328,14 @@
 			);
 			dependencies = (
 			);
-			name = Project;
+			name = AbouHaydarRichard;
 			productName = Project;
-			productReference = D4870A8E1850C96800774072 /* Project.app */;
+			productReference = D4870A8E1850C96800774072 /* AbouHaydarRichard.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D4870AB11850C96800774072 /* ProjectTests */ = {
+		D4870AB11850C96800774072 /* AbouHaydarRichardTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4870AC61850C96800774072 /* Build configuration list for PBXNativeTarget "ProjectTests" */;
+			buildConfigurationList = D4870AC61850C96800774072 /* Build configuration list for PBXNativeTarget "AbouHaydarRichardTests" */;
 			buildPhases = (
 				D4870AAE1850C96800774072 /* Sources */,
 				D4870AAF1850C96800774072 /* Frameworks */,
@@ -373,9 +346,9 @@
 			dependencies = (
 				D4870AB81850C96800774072 /* PBXTargetDependency */,
 			);
-			name = ProjectTests;
+			name = AbouHaydarRichardTests;
 			productName = ProjectTests;
-			productReference = D4870AB21850C96800774072 /* ProjectTests.xctest */;
+			productReference = D4870AB21850C96800774072 /* AbouHaydarRichardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -387,12 +360,15 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Elias Abou Haydar";
 				TargetAttributes = {
+					D4870A8D1850C96800774072 = {
+						DevelopmentTeam = EX9ELXB5S4;
+					};
 					D4870AB11850C96800774072 = {
 						TestTargetID = D4870A8D1850C96800774072;
 					};
 				};
 			};
-			buildConfigurationList = D4870A891850C96800774072 /* Build configuration list for PBXProject "Project" */;
+			buildConfigurationList = D4870A891850C96800774072 /* Build configuration list for PBXProject "AbouHaydarRichard" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -405,8 +381,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4870A8D1850C96800774072 /* Project */,
-				D4870AB11850C96800774072 /* ProjectTests */,
+				D4870A8D1850C96800774072 /* AbouHaydarRichard */,
+				D4870AB11850C96800774072 /* AbouHaydarRichardTests */,
 			);
 		};
 /* End PBXProject section */
@@ -420,7 +396,6 @@
 				D4870AAD1850C96800774072 /* Images.xcassets in Resources */,
 				D4B58BC71850E16000790A81 /* enseignants.xml in Resources */,
 				D4870A9C1850C96800774072 /* InfoPlist.strings in Resources */,
-				D46B0F02187F5B9500F682A7 /* Home.png in Resources */,
 				D4870AA51850C96800774072 /* Main.storyboard in Resources */,
 				D46B0EF5187F02B000F682A7 /* HomeIcon_Big.png in Resources */,
 				790F3C2C185B6FAF008EED0C /* diplomes.xml in Resources */,
@@ -436,7 +411,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4870ABE1850C96800774072 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +426,7 @@
 				D4870ACE1850C99A00774072 /* Teacher.m in Sources */,
 				D4870AA21850C96800774072 /* AppDelegate.m in Sources */,
 				D4D7D4551850CC4A00AAD18A /* Diploma.m in Sources */,
+				D490AD1A18808237005D468C /* TeacherUnitViewController.m in Sources */,
 				D46B0F00187F593E00F682A7 /* HomeViewController.m in Sources */,
 				D4B58B841850D3B800790A81 /* TeacherParserDelegate.m in Sources */,
 				D4870A9E1850C96800774072 /* main.m in Sources */,
@@ -462,7 +437,6 @@
 				D42B61DC185A1DA80054F3F2 /* TeacherViewController.m in Sources */,
 				D46B0EF0187EFD8400F682A7 /* TUnitDetailViewController.m in Sources */,
 				D46B0EFD187F4C5800F682A7 /* WebPageViewController.m in Sources */,
-				D4A29BED188020D700308E35 /* TeacherUnitViewController.m in Sources */,
 				790F3C30185B6FAF008EED0C /* TSchedule.m in Sources */,
 				790F3C31185B6FAF008EED0C /* TUnitParserDelegate.m in Sources */,
 			);
@@ -472,7 +446,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4870AC01850C96800774072 /* ProjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,7 +454,7 @@
 /* Begin PBXTargetDependency section */
 		D4870AB81850C96800774072 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4870A8D1850C96800774072 /* Project */;
+			target = D4870A8D1850C96800774072 /* AbouHaydarRichard */;
 			targetProxy = D4870AB71850C96800774072 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -518,14 +491,6 @@
 				D4870AA41850C96800774072 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D4870ABC1850C96800774072 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4870ABD1850C96800774072 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -609,11 +574,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Project/Project-Prefix.pch";
-				INFOPLIST_FILE = "Project/Project-Info.plist";
+				GCC_PREFIX_HEADER = "Project/AbouHaydarRichard-Prefix.pch";
+				INFOPLIST_FILE = "Project/AbouHaydarRichard-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AbouHaydarRichard;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -625,11 +592,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Project/Project-Prefix.pch";
-				INFOPLIST_FILE = "Project/Project-Info.plist";
+				GCC_PREFIX_HEADER = "Project/AbouHaydarRichard-Prefix.pch";
+				INFOPLIST_FILE = "Project/AbouHaydarRichard-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AbouHaydarRichard;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -639,7 +608,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Project.app/Project";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AbouHaydarRichard.app/AbouHaydarRichard";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Elie Abou Haydar (7W424N8R9N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Elie Abou Haydar (7W424N8R9N)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -651,8 +622,9 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "ProjectTests/ProjectTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ProjectTests/AbouHaydarRichardTests-Info.plist";
+				PRODUCT_NAME = AbouHaydarRichardTests;
+				PROVISIONING_PROFILE = "9FA588CF-A6CC-4A02-B8C0-B521467A894D";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -662,7 +634,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Project.app/Project";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AbouHaydarRichard.app/AbouHaydarRichard";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Elie Abou Haydar (7W424N8R9N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Elie Abou Haydar (7W424N8R9N)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -670,8 +644,9 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project/Project-Prefix.pch";
-				INFOPLIST_FILE = "ProjectTests/ProjectTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ProjectTests/AbouHaydarRichardTests-Info.plist";
+				PRODUCT_NAME = AbouHaydarRichardTests;
+				PROVISIONING_PROFILE = "9FA588CF-A6CC-4A02-B8C0-B521467A894D";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -680,7 +655,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4870A891850C96800774072 /* Build configuration list for PBXProject "Project" */ = {
+		D4870A891850C96800774072 /* Build configuration list for PBXProject "AbouHaydarRichard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4870AC11850C96800774072 /* Debug */,
@@ -689,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4870AC31850C96800774072 /* Build configuration list for PBXNativeTarget "Project" */ = {
+		D4870AC31850C96800774072 /* Build configuration list for PBXNativeTarget "AbouHaydarRichard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4870AC41850C96800774072 /* Debug */,
@@ -698,7 +673,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4870AC61850C96800774072 /* Build configuration list for PBXNativeTarget "ProjectTests" */ = {
+		D4870AC61850C96800774072 /* Build configuration list for PBXNativeTarget "AbouHaydarRichardTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4870AC71850C96800774072 /* Debug */,
