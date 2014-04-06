@@ -77,19 +77,19 @@
 		D46B0EFC187F4C5800F682A7 /* WebPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPageViewController.m; sourceTree = "<group>"; };
 		D46B0EFE187F593E00F682A7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		D46B0EFF187F593E00F682A7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		D4870A8E1850C96800774072 /* AbouHaydarRichard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbouHaydarRichard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4870A8E1850C96800774072 /* UFRInfoP7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UFRInfoP7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4870A911850C96800774072 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4870A931850C96800774072 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D4870A951850C96800774072 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D4870A991850C96800774072 /* AbouHaydarRichard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AbouHaydarRichard-Info.plist"; sourceTree = "<group>"; };
+		D4870A991850C96800774072 /* UFRInfoP7-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UFRInfoP7-Info.plist"; sourceTree = "<group>"; };
 		D4870A9B1850C96800774072 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4870A9D1850C96800774072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D4870A9F1850C96800774072 /* AbouHaydarRichard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AbouHaydarRichard-Prefix.pch"; sourceTree = "<group>"; };
+		D4870A9F1850C96800774072 /* UFRInfoP7-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UFRInfoP7-Prefix.pch"; sourceTree = "<group>"; };
 		D4870AA01850C96800774072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4870AA11850C96800774072 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D4870AA41850C96800774072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4870AAC1850C96800774072 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D4870AB21850C96800774072 /* AbouHaydarRichardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbouHaydarRichardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4870AB21850C96800774072 /* UFRInfoP7Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UFRInfoP7Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4870AB31850C96800774072 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D4870ACB1850C99A00774072 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		D4870ACC1850C99A00774072 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
@@ -208,8 +208,8 @@
 		D4870A8F1850C96800774072 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4870A8E1850C96800774072 /* AbouHaydarRichard.app */,
-				D4870AB21850C96800774072 /* AbouHaydarRichardTests.xctest */,
+				D4870A8E1850C96800774072 /* UFRInfoP7.app */,
+				D4870AB21850C96800774072 /* UFRInfoP7Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,10 +245,10 @@
 				D46B0EF3187F02B000F682A7 /* HomeIcon_Big.png */,
 				D46B0EF4187F02B000F682A7 /* HomeIcon_Small.png */,
 				D427CA50187EA59600C131F9 /* logo.jpg */,
-				D4870A991850C96800774072 /* AbouHaydarRichard-Info.plist */,
+				D4870A991850C96800774072 /* UFRInfoP7-Info.plist */,
 				D4870A9A1850C96800774072 /* InfoPlist.strings */,
 				D4870A9D1850C96800774072 /* main.m */,
-				D4870A9F1850C96800774072 /* AbouHaydarRichard-Prefix.pch */,
+				D4870A9F1850C96800774072 /* UFRInfoP7-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -316,9 +316,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4870A8D1850C96800774072 /* AbouHaydarRichard */ = {
+		D4870A8D1850C96800774072 /* UFRInfoP7 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4870AC31850C96800774072 /* Build configuration list for PBXNativeTarget "AbouHaydarRichard" */;
+			buildConfigurationList = D4870AC31850C96800774072 /* Build configuration list for PBXNativeTarget "UFRInfoP7" */;
 			buildPhases = (
 				D4870A8A1850C96800774072 /* Sources */,
 				D4870A8B1850C96800774072 /* Frameworks */,
@@ -328,14 +328,14 @@
 			);
 			dependencies = (
 			);
-			name = AbouHaydarRichard;
+			name = UFRInfoP7;
 			productName = Project;
-			productReference = D4870A8E1850C96800774072 /* AbouHaydarRichard.app */;
+			productReference = D4870A8E1850C96800774072 /* UFRInfoP7.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D4870AB11850C96800774072 /* AbouHaydarRichardTests */ = {
+		D4870AB11850C96800774072 /* UFRInfoP7Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4870AC61850C96800774072 /* Build configuration list for PBXNativeTarget "AbouHaydarRichardTests" */;
+			buildConfigurationList = D4870AC61850C96800774072 /* Build configuration list for PBXNativeTarget "UFRInfoP7Tests" */;
 			buildPhases = (
 				D4870AAE1850C96800774072 /* Sources */,
 				D4870AAF1850C96800774072 /* Frameworks */,
@@ -346,9 +346,9 @@
 			dependencies = (
 				D4870AB81850C96800774072 /* PBXTargetDependency */,
 			);
-			name = AbouHaydarRichardTests;
+			name = UFRInfoP7Tests;
 			productName = ProjectTests;
-			productReference = D4870AB21850C96800774072 /* AbouHaydarRichardTests.xctest */;
+			productReference = D4870AB21850C96800774072 /* UFRInfoP7Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -368,7 +368,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D4870A891850C96800774072 /* Build configuration list for PBXProject "AbouHaydarRichard" */;
+			buildConfigurationList = D4870A891850C96800774072 /* Build configuration list for PBXProject "UFRInfoP7" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -381,8 +381,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4870A8D1850C96800774072 /* AbouHaydarRichard */,
-				D4870AB11850C96800774072 /* AbouHaydarRichardTests */,
+				D4870A8D1850C96800774072 /* UFRInfoP7 */,
+				D4870AB11850C96800774072 /* UFRInfoP7Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -454,7 +454,7 @@
 /* Begin PBXTargetDependency section */
 		D4870AB81850C96800774072 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4870A8D1850C96800774072 /* AbouHaydarRichard */;
+			target = D4870A8D1850C96800774072 /* UFRInfoP7 */;
 			targetProxy = D4870AB71850C96800774072 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -576,10 +576,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Project/AbouHaydarRichard-Prefix.pch";
-				INFOPLIST_FILE = "Project/AbouHaydarRichard-Info.plist";
+				GCC_PREFIX_HEADER = "Project/UFRInfoP7-Prefix.pch";
+				INFOPLIST_FILE = "Project/UFRInfoP7-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = AbouHaydarRichard;
+				PRODUCT_NAME = UFRInfoP7;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -594,10 +594,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Project/AbouHaydarRichard-Prefix.pch";
-				INFOPLIST_FILE = "Project/AbouHaydarRichard-Info.plist";
+				GCC_PREFIX_HEADER = "Project/UFRInfoP7-Prefix.pch";
+				INFOPLIST_FILE = "Project/UFRInfoP7-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = AbouHaydarRichard;
+				PRODUCT_NAME = UFRInfoP7;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -623,7 +623,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "ProjectTests/AbouHaydarRichardTests-Info.plist";
-				PRODUCT_NAME = AbouHaydarRichardTests;
+				PRODUCT_NAME = UFRInfoP7Tests;
 				PROVISIONING_PROFILE = "9FA588CF-A6CC-4A02-B8C0-B521467A894D";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -645,7 +645,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Project/Project-Prefix.pch";
 				INFOPLIST_FILE = "ProjectTests/AbouHaydarRichardTests-Info.plist";
-				PRODUCT_NAME = AbouHaydarRichardTests;
+				PRODUCT_NAME = UFRInfoP7Tests;
 				PROVISIONING_PROFILE = "9FA588CF-A6CC-4A02-B8C0-B521467A894D";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -655,7 +655,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4870A891850C96800774072 /* Build configuration list for PBXProject "AbouHaydarRichard" */ = {
+		D4870A891850C96800774072 /* Build configuration list for PBXProject "UFRInfoP7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4870AC11850C96800774072 /* Debug */,
@@ -664,7 +664,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4870AC31850C96800774072 /* Build configuration list for PBXNativeTarget "AbouHaydarRichard" */ = {
+		D4870AC31850C96800774072 /* Build configuration list for PBXNativeTarget "UFRInfoP7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4870AC41850C96800774072 /* Debug */,
@@ -673,7 +673,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4870AC61850C96800774072 /* Build configuration list for PBXNativeTarget "AbouHaydarRichardTests" */ = {
+		D4870AC61850C96800774072 /* Build configuration list for PBXNativeTarget "UFRInfoP7Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4870AC71850C96800774072 /* Debug */,
